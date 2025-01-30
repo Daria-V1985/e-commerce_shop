@@ -5,13 +5,21 @@
 $firstColor: #fff;
 $secondColor: #e5e8ed;
 $title: #1e212c;
-$text: #424551;
+$darkText: #424551;
+$lightText: #9a9ca5;
 $success: #03cea4;
 $primary: #17696a;
 $danger: #ff4242;
 $warning: #f89828;
 
 // Наследование
+
+%container {
+  width: 77.5rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
 
 %h1 {
   font-size: 2.9rem;
@@ -41,4 +49,25 @@ $warning: #f89828;
 %h6 {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+// Общие правила
+
+a {
+  text-decoration: none;
+  color: $lightText;
+  cursor: pointer;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.lock {
+  overflow: hidden;
 }
