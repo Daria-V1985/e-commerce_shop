@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,400,italic,700,700italic,900,900italic&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #424551;
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */

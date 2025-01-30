@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,400,italic,700,700italic,900,900italic&display=swap);
+
+// Переменные
+
+$firstColor: #fff;
+$secondColor: #e5e8ed;
+$title: #1e212c;
+$text: #424551;
+$success: #03cea4;
+$primary: #17696a;
+$danger: #ff4242;
+$warning: #f89828;
+
+// Наследование
+
+%h1 {
+  font-size: 2.9rem;
+  line-height: 1.3;
+}
+
+%h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+%h3 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+%h4 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+%h5 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+%h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}

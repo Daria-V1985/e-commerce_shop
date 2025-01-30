@@ -1,0 +1,15 @@
+@import "components/_basic.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $text;
+  background-color: $firstColor;
+}
