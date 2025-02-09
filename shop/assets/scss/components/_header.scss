@@ -214,6 +214,9 @@
     transform: translate(0, -50%);
     padding-right: 10px;
     cursor: pointer;
+    svg {
+      fill: $firstColor;
+    }
   }
   &__input {
     width: 23.75rem;
@@ -227,19 +230,47 @@
       color: $lightText;
       font-size: 14px;
       font-weight: 400;
+      transition: all 0.15s ease;
     }
     &:focus {
       border: 1px solid $primary;
       box-shadow: 4px 4px 8px $primary;
+      transition: box-shadow 0.15s ease;
+      &::placeholder {
+        color: transparent;
+        transition: color 0.15s ease;
+      }
     }
   }
 }
 
 .actions-header {
   display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  z-index: 5;
   &__favorite {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    &-num {
+      font-size: 1.1rem;
+      color: $firstColor;
+      margin-bottom: 5px;
+    }
   }
   &__basket {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    &-num {
+      color: $firstColor;
+      margin-bottom: 5px;
+      padding: 0 8px;
+      background: $success;
+      border-radius: 4px;
+    }
   }
 }
 
