@@ -135,6 +135,7 @@ ul li {
   position: relative;
   z-index: 10;
 }
+
 .top-menu__list {
   display: flex;
 }
@@ -236,6 +237,7 @@ ul li {
 .profile__icon {
   margin: 5px 0.5rem 0 0;
 }
+
 .header-bottom {
   width: 100%;
   background-color: #1e212c;
@@ -272,6 +274,89 @@ ul li {
   transform: scaleX(1);
   transform-origin: center;
   transition: transform 0.25s;
+}
+
+.sub-menu-catalog {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  background-color: #1e212c;
+  margin-top: 39px;
+  padding: 20px 15px 40px 15px;
+  transition: left 0.3s ease 0s;
+}
+.sub-menu-catalog__block {
+  display: flex;
+  justify-content: start;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.sub-menu-catalog__main-list {
+  min-width: 11.25rem;
+}
+.sub-menu-catalog__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  margin-right: 4.2rem;
+  position: relative;
+}
+.sub-menu-catalog__wrapper:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(-45deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.326%, rgb(218, 219, 221) 51.91%, rgba(218, 219, 221, 0.5) 87.848%, rgba(218, 219, 221, 0) 100%);
+  position: absolute;
+  right: -4.2rem;
+  bottom: -5px;
+}
+.sub-menu-catalog__category {
+  min-width: 11.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.sub-menu-catalog__link-category {
+  color: #17696a;
+}
+.sub-menu-catalog__list {
+  min-width: 11.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.sub-menu-catalog__item {
+  padding-bottom: 5px;
+}
+.sub-menu-catalog__link {
+  transition: color 0.25s ease;
+}
+.sub-menu-catalog__link:hover {
+  color: #17696a;
+  transition: color 0.25s ease;
+}
+.sub-menu-catalog__sale {
+  margin-left: 2.4rem;
+}
+.sub-menu-catalog__sale-img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.sub-menu-catalog__sale-img img {
+  width: 17.8rem;
+  height: auto;
+}
+.sub-menu-catalog__sale-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #9a9ca5;
 }
 
 .search-header {
@@ -342,7 +427,6 @@ ul li {
        column-gap: 8px;
 }
 .actions-header__favorite-num {
-  font-size: 1.1rem;
   color: #fff;
   margin-bottom: 5px;
 }
@@ -353,9 +437,12 @@ ul li {
        column-gap: 8px;
 }
 .actions-header__basket-num {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 150%;
   color: #fff;
   margin-bottom: 5px;
-  padding: 0 8px;
+  padding: 2px 8px;
   background: #03cea4;
   border-radius: 4px;
 }

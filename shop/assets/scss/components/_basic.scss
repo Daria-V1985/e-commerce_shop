@@ -131,9 +131,9 @@ ul li {
   width: 10px;
   height: 7px;
   border-top: 2px solid transparent;
-  border-bottom: 2px solid #9a9ca5;
+  border-bottom: 2px solid $lightText;
   border-right: 2px solid transparent;
-  border-left: 2px solid #9a9ca5;
+  border-left: 2px solid $lightText;
   transform: rotate(-45deg);
 }
 
