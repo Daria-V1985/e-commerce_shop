@@ -8,6 +8,7 @@ $title: #1e212c;
 $headerTop: #343640;
 $darkText: #424551;
 $lightText: #9a9ca5;
+$submenu: #bec1c6;
 $success: #03cea4;
 $primary: #17696a;
 $danger: #ff4242;
@@ -99,7 +100,7 @@ ul li {
   overflow: hidden;
 }
 
-._link {
+._active {
   position: relative;
   &:before {
     content: "";
@@ -135,6 +136,20 @@ ul li {
   border-right: 2px solid transparent;
   border-left: 2px solid $lightText;
   transform: rotate(-45deg);
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  color: $primary;
+  transition: all 0.25s ease;
+  &:hover {
+    background-color: $primary;
+    color: $submenu;
+    transition: all 0.25s ease;
+  }
 }
 
 ._danger {
