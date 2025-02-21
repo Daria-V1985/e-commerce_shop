@@ -275,11 +275,11 @@ ul li {
 .catalog-menu__link:before {
   content: "";
   width: 100%;
-  height: 1px;
-  background: linear-gradient(-45deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.326%, rgb(218, 219, 221) 51.91%, rgba(218, 219, 221, 0.5) 87.848%, rgba(218, 219, 221, 0) 100%);
+  height: 3px;
+  background: #17696a;
   position: absolute;
+  top: 55px;
   left: 0;
-  bottom: -5px;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.25s;
@@ -289,17 +289,29 @@ ul li {
   transform-origin: center;
   transition: transform 0.25s;
 }
+.catalog-menu__link:hover {
+  color: #17696a;
+  transition: transform 0.25s;
+}
+.catalog-menu__item:hover .sub-menu-catalog {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
 
 .sub-menu-catalog {
   position: fixed;
   width: 100%;
   left: 0;
-  top: 100%;
+  top: 120px;
   background-color: #1e212c;
   margin-top: 2rem;
   border-top: 1px solid #9a9ca5;
   padding: 20px 15px 40px 15px;
   transition: left 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
 }
 .sub-menu-catalog__block {
   display: flex;
