@@ -9,8 +9,7 @@
     padding: 12px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-   //overflow: hidden;
+    align-items: center; 
   }
   &__phone {
     font-weight: 700;
@@ -148,10 +147,6 @@
     align-items: center;
     z-index: -1;
   }
-  &__search {
-  }
-  &__actions {
-  }
 }
 
 .catalog-menu {
@@ -206,6 +201,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all .5s ease;
+  z-index: 99;
   &__block {
     display: flex;
     justify-content: start;
@@ -294,6 +290,7 @@
       padding: 1rem 0;
     }
     &-btn {
+      @extend %btn;
       cursor: pointer;
       span {
         padding-right: 10px;
@@ -305,8 +302,6 @@
 .search-header {
     background: rgba(7, 7, 7, 0.03);
     position: relative;
-  &__form {
-  }
   &__button {
     position: absolute;
     top: 50%;
@@ -357,7 +352,6 @@
     align-items: center;
     column-gap: 8px;
     &-num {
-      //font-size: 1.1rem;
       color: $firstColor;
       margin-bottom: 5px;
     }

@@ -52,6 +52,20 @@ $warning: #f89828;
   line-height: 1.5;
 }
 
+%btn {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  color: $primary;
+  transition: all 0.25s ease;
+  &:hover {
+    background-color: $primary;
+    color: $submenu;
+    transition: all 0.25s ease;
+  }
+}
+
 // Общие правила
 
 * {
@@ -136,20 +150,6 @@ ul li {
   border-right: 2px solid transparent;
   border-left: 2px solid $lightText;
   transform: rotate(-45deg);
-}
-
-.btn {
-  padding: 12px 24px;
-  background-color: transparent;
-  border: 1px solid $primary;
-  border-radius: 4px;
-  color: $primary;
-  transition: all 0.25s ease;
-  &:hover {
-    background-color: $primary;
-    color: $submenu;
-    transition: all 0.25s ease;
-  }
 }
 
 ._danger {

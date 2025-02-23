@@ -2,10 +2,102 @@
 
 @import "components/_header.scss";
 
-.main {
-  height: 100%;
-  background-color: #ccc;
+.hero {
+  background: #e3bfa9;
+  position: relative;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    img {
+      max-width: 100%;
+      margin-right: -6.25rem;
+    }
+  }
 }
+
+.info {
+  max-width: 33.75rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); 
+  color: $title;
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  &__subtitle {
+    @extend %h1;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+  &__btn {
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+    &.btn-left {
+      @extend %btn;
+      padding: 0 40px;
+      margin-right: 1.5rem;
+      color: $primary;
+      &:hover {
+        color: $firstColor;
+      }
+    }
+    &.btn-right {
+      @extend %btn;
+      padding: 0 40px;
+      background: $primary;
+      color: $firstColor;
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.top {
+  margin-bottom: 11.25rem;
+  &__container {
+    margin-top: -4rem;
+  }
+}
+
+.top-products {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  &__item {
+    width: 24.4rem;
+    height: auto;
+  }
+  &__img {
+    border-radius: 4px;
+  }
+  &__text {
+    @extend %h5;
+    color: $darkText;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
 
 @import "components/footer.scss";
 
