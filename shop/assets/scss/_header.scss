@@ -283,8 +283,7 @@
       padding: 1rem 0;
     }
     &-btn {
-      @extend %btn;
-      cursor: pointer;
+      @include btn;
       span {
         padding-right: 10px;
       }
@@ -303,9 +302,11 @@
     background-color: transparent;
     transform: translate(0, -50%);
     padding-right: 10px;
-    cursor: pointer;
-    svg {
-      fill: $firstColor;
+    color: $firstColor;
+    transition: color 0.15s ease;
+    &:hover {
+      color: $primary;
+      transition: color 0.15s ease;
     }
   }
   &__input {
@@ -316,6 +317,7 @@
     color: $lightText;
     padding: 0.75rem 2.3rem 0.75rem 1rem;
     outline: none;
+    transition: all 0.15s ease;
     &::placeholder {
       color: $lightText;
       font-size: 14px;
