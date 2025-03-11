@@ -4,7 +4,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
-  color: $lightText;
+  color: $gray600;
   &__container {
     padding: 12px 0;
     display: flex;
@@ -110,12 +110,12 @@
     margin-right: 0.6rem;
     transition: all 0.15s ease;
     &:hover {
-      color: $firstColor;
+      color: $white;
       cursor: pointer;
       transition: all 0.15s ease;
     }
     &.text--disabled {
-      color: $lightText;
+      color: $gray600;
       cursor: pointer;
     }
   }
@@ -131,7 +131,7 @@
 
 .header-bottom {
   width: 100%;
-  background-color: $title;
+  background-color: $gray900;
   font-weight: 700;
   &__container {
     padding: 30px 0;
@@ -185,10 +185,10 @@
   position: absolute;
   width: 100%;
   left: 0;
-  top: 120px;
-  background-color: $title;
+  top: 115px;
+  background-color: $gray900;
   margin-top: 2rem;
-  border-top: 1px solid $lightText;
+  border-top: 1px solid $gray600;
   padding: 20px 15px 40px 15px;
   transition: left 0.3s ease 0s;
   opacity: 0;
@@ -280,7 +280,7 @@
     &-text {
       color: $submenu;
       font-weight: 700;
-      padding: 1rem 0;
+      margin: 1rem 0 1.5rem 0;
     }
     &-btn {
       @include btn;
@@ -302,7 +302,7 @@
     background-color: transparent;
     transform: translate(0, -50%);
     padding-right: 10px;
-    color: $firstColor;
+    color: $white;
     transition: color 0.15s ease;
     &:hover {
       color: $primary;
@@ -314,12 +314,12 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: $headerTop;
-    color: $lightText;
+    color: $gray600;
     padding: 0.75rem 2.3rem 0.75rem 1rem;
     outline: none;
     transition: all 0.15s ease;
     &::placeholder {
-      color: $lightText;
+      color: $gray600;
       font-size: 14px;
       font-weight: 400;
       transition: all 0.15s ease;
@@ -347,7 +347,7 @@
     align-items: center;
     column-gap: 8px;
     &-num {
-      color: $firstColor;
+      color: $white;
       margin-bottom: 5px;
     }
   }
@@ -359,7 +359,7 @@
       font-size: 12px;
       font-weight: 900;
       line-height: 150%;
-      color: $firstColor;
+      color: $white;
       margin-bottom: 5px;
       padding: 2px 8px;
       background: $success;

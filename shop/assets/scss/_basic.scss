@@ -14,24 +14,29 @@
 
 // Переменные
 
-$firstColor: #fff;
-$secondColor: #e5e8ed;
-$title: #1e212c;
+$white: #fff;
+$gray100: #f9f9f9;
+$gray200: #f4f5f7;
+$gray300: #e5e8ed;
+$gray400: #d7dadd;
+$gray500: #b3b7bc;
+$gray600: #9a9ca5;
+$gray700: #787a80;
+$gray800: #424551;
+$gray900: #1e212c;
 $headerTop: #343640;
-$darkText: #424551;
-$lightText: #9a9ca5;
 $submenu: #bec1c6;
 $success: #03cea4;
 $primary: #17696a;
 $danger: #ff4242;
 $warning: #f89828;
+$info: #5a87fc;
 
 // Наследование
 
 %container {
   max-width: 77.5rem;
   margin: 0 auto;
-  //overflow-x: hidden;
 }
 
 %h1 {
@@ -67,20 +72,20 @@ $warning: #f89828;
 %title {
   font-size: 0.87rem;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
-  color: $title;
+  color: $gray900;
 }
 
 %subtitle {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 130%;
+  line-height: 1.3;
   letter-spacing: 0%;
   text-align: left;
-  color: $title;
+  color: $gray900;
 }
 
 // Миксины
@@ -122,13 +127,13 @@ body {
   height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-  color: $darkText;
-  background-color: $firstColor;
+  color: $gray800;
+  background-color: $white;
 }
 
 a {
   text-decoration: none;
-  color: $lightText;
+  color: $gray600;
 }
 
 a:focus,
@@ -146,6 +151,42 @@ ul li {
 
 .lock {
   overflow: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.sale {
+  color: $white;
+  padding: 1px 8px;
+  background-color: $danger;
+  border-radius: 4px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.price-new {
+  @extend %h4;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.price-old {
+  @extend %h5;
+  color: $gray700;
+  padding-top: 5px;
+  margin-left: 7px;
+  position: relative;
+  &:after {
+    content: '';
+    width: 100%;
+    border: 1px solid $gray700;
+    position: absolute;
+    top: 33%;
+    left: 0;
+  }
 }
 
 ._active {
@@ -180,9 +221,9 @@ ul li {
   width: 10px;
   height: 7px;
   border-top: 2px solid transparent;
-  border-bottom: 2px solid $lightText;
+  border-bottom: 2px solid $gray600;
   border-right: 2px solid transparent;
-  border-left: 2px solid $lightText;
+  border-left: 2px solid $gray600;
   transform: rotate(-45deg);
 }
 
@@ -578,4 +619,247 @@ ul li {
   content: "\e96f";
 }
 
+.small-card {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 2.75rem;
+  &__body {
+    width: 285px;
+    height: auto !important;
+    position: relative;
+    transition: all 0.25s ease;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    &:hover {
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+      transition: box-shadow 0.25s ease;
+    }
+    &:hover .small-card__info-hidden {
+      opacity: 1;
+      transition: opacity 0.25s ease;
+    }
+  }
+  &__img {
+    width: 285px;
+    height: 320px;
+    margin-bottom: 1rem;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__favorite {
+    position: absolute;
+    top: 17rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    border-radius: 50%;
+    color: $gray600;
+    transition: color 0.25s ease;
+    &:hover {
+      color: $danger;
+      transition: color 0.25s ease;
+    }
+    &._icon-favorite:before {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 25%;
+    &-title {
+      @extend %h5;
+      padding-bottom: 0.5rem;
+      flex: 1 auto;
+    }
+    &-price {
+      display: flex;
+      gap: 5px;
+    }
+    &-hidden {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    &-btn {
+      @include btn;
+      background: $primary;
+      color: $white;
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        //line-height: 36px;
+        letter-spacing: 0.5px;
+        padding-left: 9px;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+}
 
+.large-card {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin: 6.15rem 0 2.25rem 0;
+  &__body {
+    max-width: 390px;
+    height: auto !important;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.25s ease;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    &:hover {
+      background-color: $white;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+      transition: all 0.25s ease;
+    }
+    &:hover .large-card__info-hidden {
+      opacity: 1;
+      transition: all 0.25s ease;
+    }
+  }
+  &__img {
+    width: 390px;
+    height: 440px;
+    margin-bottom: 1rem;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__favorite {
+    position: absolute;
+    top: 24rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    border-radius: 50%;
+    color: $gray600;
+    transition: color 0.25s ease;
+    &:hover {
+      color: $danger;
+      transition: color 0.25s ease;
+    }
+    &._icon-favorite:before {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 25%;
+    &-title {
+      @extend %h5;
+      padding-bottom: 0.5rem;
+      flex: 1 auto;
+    }
+    &-price {
+      display: flex;
+      gap: 5px;
+    }
+    &-hidden {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+
+    }
+    &-btn {
+      @include btn;
+      background: $primary;
+      color: $white;
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        //line-height: 36px;
+        letter-spacing: 0.5px;
+        padding-left: 9px;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.card-dop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &__sizes {
+    display: flex;
+    gap: 8px;
+  }
+  &__size {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    padding: 0 4px;
+    border: 1px solid $submenu;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border 0.25s ease;
+    &:hover {
+      border: 1px solid $primary;
+      transition: border 0.25s ease;
+    }
+  }
+  &__colors {
+    display: flex;
+    gap: 8px;
+  }
+  &__color {
+    width: 24px;
+    height: 24px;
+    border: 1px solid $submenu;
+    border-radius: 50%;
+    transition: border 0.25s ease;
+    position: relative;
+    &:hover {
+      border: 1px solid $primary;
+      transition: border 0.25s ease;
+    }
+    &-circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
