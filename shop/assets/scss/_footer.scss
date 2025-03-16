@@ -1,4 +1,80 @@
 .footer {
-  height: 120px;
   background-color: #000;
+  color: $white;
+  padding-top: 60px;
+  &__container {
+  }
+  &__body {
+    margin-bottom: 40px;
+  }
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $gray800;
+    padding: 25px 0 32px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    .made-in {
+      span {
+        padding: 0 3px;
+        color: $primary;
+      }
+    }
+  }
 }
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.help,
+.shop,
+.contacts,
+.app {
+  &__title {
+    @extend %h6;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  &__link {
+    @extend %h6;
+    padding-bottom: 4px;
+    cursor: pointer;
+  }
+}
+
+.contacts {
+  &__data {
+    margin-bottom: 24px;
+  }
+}
+
+.social {
+  &__icon {
+    background-color: $gray800;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  span {
+    color: $white;
+  }
+}
+
+.app {
+  &__links {
+    display: flex;
+    gap: 20px;
+  }
+}
+

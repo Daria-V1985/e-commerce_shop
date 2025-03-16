@@ -17,7 +17,7 @@
   line-height: 1.3;
 }
 
-.mobile-app__desc-title, .sales__title, .trends__title, .popular-categories__title, .timer__items, .new-arrivals__title {
+.news-subscribe__title, .fashion-blog__title, .mobile-app__desc-title, .sales__title, .trends__title, .popular-categories__title, .timer__items, .new-arrivals__title {
   font-size: 2rem;
   line-height: 1.3;
 }
@@ -32,17 +32,23 @@
   line-height: 1.3;
 }
 
-.item-body__title, .top-products__text, .large-card__info-title, .small-card__info-title, .price-old {
+.news-subscribe__text, .article__title, .item-body__title, .top-products__text, .large-card__info-title, .small-card__info-title, .price-old {
   font-size: 1.13rem;
   line-height: 1.3;
 }
 
-.item-body__text {
+.help__link,
+.shop__link,
+.contacts__link,
+.app__link, .help__title,
+.shop__title,
+.contacts__title,
+.app__title, .checkbox__label, .news-subscribe__form-label, .article__text, .telegram__info-btn span, .item-body__text {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.banner-subscribe__form, .banner-subscribe__info-title, .banner-new__info-title, .timer__text, .banner-offer__info-title, .banner-sale__info-title {
+.news-subscribe__form, .telegram__info-title, .banner-subscribe__form, .banner-subscribe__info-title, .banner-new__info-title, .timer__text, .banner-offer__info-title, .banner-sale__info-title {
   font-size: 0.87rem;
   font-weight: 700;
   line-height: 1.5;
@@ -52,7 +58,7 @@
   color: #1e212c;
 }
 
-.banner-subscribe__info-subtitle, .banner-new__info-subtitle, .banner-offer__info-subtitle, .banner-sale__info-subtitle {
+.telegram__info-subtitle, .banner-subscribe__info-subtitle, .banner-new__info-subtitle, .banner-offer__info-subtitle, .banner-sale__info-subtitle {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.3;
@@ -2024,13 +2030,330 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
+.telegram__info-title {
+  padding-bottom: 0.5rem;
+}
+.telegram__info-subtitle {
+  padding-bottom: 60px;
+}
+.telegram__info-btn {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  color: #17696a;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.telegram__info-btn:hover {
+  background-color: #17696a;
+  color: #bec1c6;
+  transition: all 0.25s ease;
+}
+.telegram__info-btn span {
+  font-weight: 700;
+  padding-left: 16px;
+}
+.telegram__info-btn:hover {
+  color: #fff;
+}
 .telegram__pictures {
   display: flex;
   gap: 15px;
 }
+
+.fashion-blog__container {
+  position: relative;
+}
+.fashion-blog__title {
+  margin-bottom: 60px;
+}
+.fashion-blog__btn {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  color: #17696a;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fashion-blog__btn:hover {
+  background-color: #17696a;
+  color: #bec1c6;
+  transition: all 0.25s ease;
+}
+.fashion-blog__btn:hover {
+  color: #fff;
+}
+.fashion-blog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.article {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  transition: all 0.25s ease;
+}
+.article:hover {
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.08), 0px 12px 10px -6px rgba(154, 156, 165, 0.1), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 80px 80px -20px rgba(154, 156, 165, 0.13);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.article:hover .article__title {
+  color: #17696a;
+  transition: all 0.25s ease;
+}
+.article__info {
+  padding: 24px;
+}
+.article__title {
+  font-weight: 700;
+  color: #1e212c;
+  margin-bottom: 12px;
+  transition: all 0.25s ease;
+}
+.article__desription {
+  display: flex;
+  font-size: 14px;
+  line-height: 150%;
+  color: #787a80;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+.article__desription-name {
+  position: relative;
+}
+.article__desription-name:after {
+  display: block;
+  content: "|";
+  width: 1px;
+  height: 100%;
+  color: #787a80;
+  position: absolute;
+  right: 50%;
+}
+.article__desription-date {
+  position: relative;
+}
+.article__desription-date:after {
+  display: block;
+  content: "|";
+  width: 1px;
+  height: 100%;
+  color: #787a80;
+  position: absolute;
+  right: 50%;
+}
+.partners__container {
+  padding: 132px 0;
+  display: flex;
+}
+.partners__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 100px;
+}
+.partners__icon {
+  transform: scale(1.2);
+}
+
+.news-subscribe {
+  background-color: #f4f5f7;
+}
+.news-subscribe__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  padding: 65px 0;
+}
+.news-subscribe__title {
+  font-size: 46px;
+  color: #1e212c;
+  padding-bottom: 24px;
+}
+.news-subscribe__text {
+  color: #787a80;
+  padding-bottom: 24px;
+}
+.news-subscribe__form {
+  width: 395px;
+  color: #424551;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.news-subscribe__form-line {
+  min-width: 360px;
+  padding: 8px 0 13px 0;
+  position: relative;
+}
+.news-subscribe__form-input {
+  width: 215px;
+  padding: 12px 16px;
+  border: 1px solid #bec1c6;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline: none;
+}
+.news-subscribe__form-input:focus {
+  border: 1px solid #17696a;
+  transition: border 0.15s ease;
+}
+.news-subscribe__form-input:focus::-moz-placeholder {
+  color: transparent;
+  -moz-transition: border 0.15s ease;
+  transition: border 0.15s ease;
+}
+.news-subscribe__form-input:focus::placeholder {
+  color: transparent;
+  transition: border 0.15s ease;
+}
+.news-subscribe__form-btn {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  color: #17696a;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #17696a;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  left: 210px;
+}
+.news-subscribe__form-btn:hover {
+  background-color: #17696a;
+  color: #bec1c6;
+  transition: all 0.25s ease;
+}
+.news-subscribe__form-btn:focus {
+  border: 1px solid #17696a;
+  transition: border 0.15s ease;
+}
+.news-subscribe__form-btn:hover {
+  color: #fff;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked + .checkbox__label:after {
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.checkbox__label {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  position: relative;
+}
+.checkbox__label:before {
+  content: "";
+  align-self: start;
+  flex: 0 0 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  margin: 3px 12px 0 0;
+}
+.checkbox__label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  background-color: #17696a;
+  border-radius: 4px;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
 .footer {
-  height: 120px;
   background-color: #000;
+  color: #fff;
+  padding-top: 60px;
+}
+.footer__body {
+  margin-bottom: 40px;
+}
+.footer__copy {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #424551;
+  padding: 25px 0 32px 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.footer__copy .made-in span {
+  padding: 0 3px;
+  color: #17696a;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-body__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.help__title,
+.shop__title,
+.contacts__title,
+.app__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.help__link,
+.shop__link,
+.contacts__link,
+.app__link {
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.contacts__data {
+  margin-bottom: 24px;
+}
+
+.social__icon {
+  background-color: #424551;
+  border-radius: 4px;
+  padding: 8px;
+  margin-right: 12px;
+}
+.social__icon:last-child {
+  margin-right: 0;
+}
+.social span {
+  color: #fff;
+}
+
+.app__links {
+  display: flex;
+  gap: 20px;
 }
 
 @media (max-width: 78.12rem) {

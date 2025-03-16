@@ -651,22 +651,140 @@
   display: flex;
   justify-content: space-between;
   &__info {
-  }
-  &__info-title {
-  }
-  &__info-subtitle {
-  }
-  &__info-btn {
+    &-title {
+      @extend %title;
+      padding-bottom: 0.5rem;
+    }
+    &-subtitle {
+      @extend %subtitle;
+      padding-bottom: 60px;
+    }
+    &-btn {
+      @include btn;
+      width: 190px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        @extend %h6;
+        font-weight: 700;
+        padding-left: 16px;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
   }
   &__pictures {
     display: flex;
     gap: 15px;
   }
-  &__img {
+}
+
+.fashion-blog {
+  &__container {
+    position: relative;
+  }
+  &__title {
+    @extend %h2;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    @include btn;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      color: $white;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+.article {
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),0px 12px 10px -6px rgba(154, 156, 165, 0.04),0px 30px 24px -10px rgba(154, 156, 165, 0.05),0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  transition: all 0.25s ease;
+  &:hover {
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.08),0px 12px 10px -6px rgba(154, 156, 165, 0.1),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 80px 80px -20px rgba(154, 156, 165, 0.13);
+    transition: all 0.25s ease;
+    cursor: pointer;
+    & .article__title {
+      color: $primary;
+      transition: all 0.25s ease;
+    }
+  }
+  &__info {
+    padding: 24px;
+  }
+  &__title {
+    @extend %h5;
+    font-weight: 700;
+    color: $gray900;
+    margin-bottom: 12px;
+    transition: all 0.25s ease;
+  }
+  &__desription {
+    display: flex;
+    font-size: 14px;
+    line-height: 150%;
+    color: $gray700;
+    gap: 24px;
+    margin-bottom: 20px;
+    &-name {
+      position: relative;
+      &:after {
+        display: block;
+        content: "|";
+        width: 1px;
+        height: 100%;
+        color: $gray700;
+        position: absolute;
+        right: 50%;
+      }
+    }
+    &-date {
+      position: relative;
+      &:after {
+        display: block;
+        content: "|"; 
+        width: 1px;
+        height: 100%;
+        color: $gray700;
+        position: absolute;
+        right: 50%;
+      }
+    }
+  }
+  &__text {
+    @extend %h6;
+  }
+}
+
+.partners {
+  &__container {
+    padding: 132px 0;
+    display: flex;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 100px;
+  }
+  &__icon {
+    transform: scale(1.2);
   }
 }
 
 
+@import "subscribe";
 
 @import "footer";
 
