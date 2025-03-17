@@ -1,0 +1,192 @@
+.breadcrumbs {
+  background-color: $gray200;
+  padding: 18.5px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    white-space: nowrap;
+    overflow: auto;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    padding: 0 18px;
+    &:after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid $gray600;
+      border-bottom: 2px solid $gray600;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 9px;
+      right: -2px;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: $gray800;
+    transition: color 0.25s ease;
+    &:hover {
+      color: $primary;
+      transition: color 0.25s ease;
+    }
+  }
+  &__current {
+    color: $gray600;
+  }
+}
+
+.active-filters {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__item {
+    position: relative;
+    cursor: pointer;
+    .active-filters__btn,
+    .active-filters__btn--all {
+      cursor: pointer;
+      transition: color 0.25s ease;
+      &:hover {
+        color: $primary;
+        transition: color 0.25s ease;
+      }
+    }
+  }
+  &__btn {
+    color: $gray600;
+    background-color: transparent;
+    border: none;
+    margin-left: 16px;
+    &:before {
+      content: 'x';
+      width: 14px;
+      height: 14px;
+      color: $gray600;
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
+  }
+  &__btn--all {
+    color: $gray800;
+    background-color: transparent;
+    border: none;
+    margin-left: 16px;
+    &:before {
+      content: 'x';
+      width: 14px;
+      height: 14px;
+      color: $gray800;
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
+  }
+}
+
+.catalog {
+  padding: 32px 0 51px 0;
+  &__container {
+    display: grid;
+    grid-template-columns: 255px 1fr;
+    gap: 60px;
+  }
+}
+
+.filter-catalog {
+  &__title {
+    @include btn;
+    background-color: $primary;
+    color: $white;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+  }
+	&__item {
+    margin-bottom: 40px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px solid $gray300;
+      color: $gray300;
+      position: absolute;
+      left: 0;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+	}
+}
+
+.clothes-filter,
+.size-filter,
+.colors-filter,
+.material-filter,
+.brands-filter,
+.price-filter {
+	&__content {
+    margin: 16px 0;
+	}
+}
+
+.products {
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 285px));
+    column-gap: 35px;
+    row-gap: 10px;
+    padding-bottom: 45px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &__arrow {
+    background-color: transparent;
+    border: none;
+    @extend %h6;
+    font-weight: 700;
+    cursor: pointer;
+    &.disabled {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__link {
+    @extend %h5;
+    font-weight: 700;
+    color: $gray800;
+    &.active {
+      color: $primary;
+    }
+  }
+}
+

@@ -32,7 +32,7 @@
   line-height: 1.3;
 }
 
-.news-subscribe__text, .article__title, .item-body__title, .top-products__text, .large-card__info-title, .small-card__info-title, .price-old {
+.news-subscribe__text, .pagination__link, .article__title, .item-body__title, .top-products__text, .large-card__info-title, .small-card__info-title, .price-old {
   font-size: 1.13rem;
   line-height: 1.3;
 }
@@ -43,12 +43,12 @@
 .app__link, .help__title,
 .shop__title,
 .contacts__title,
-.app__title, .checkbox__label, .news-subscribe__form-label, .article__text, .telegram__info-btn span, .item-body__text {
+.app__title, .checkbox__label, .news-subscribe__form-label, .pagination__arrow, .article__text, .telegram__info-btn span, .item-body__text {
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.news-subscribe__form, .telegram__info-title, .banner-subscribe__form, .banner-subscribe__info-title, .banner-new__info-title, .timer__text, .banner-offer__info-title, .banner-sale__info-title {
+.news-subscribe__form, .telegram__info-title, .banner-subscribe__form, .banner-subscribe__info-title, .banner-new__info-title, .timer__text, .banner-offer__info-title, .banner-sale__info-title, .title {
   font-size: 0.87rem;
   font-weight: 700;
   line-height: 1.5;
@@ -107,10 +107,6 @@ ul li {
 
 .lock {
   overflow: hidden;
-}
-
-.none {
-  display: none;
 }
 
 .sale {
@@ -687,12 +683,6 @@ ul li {
   content: "\e96f";
 }
 
-.small-card {
-  display: flex;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  margin-bottom: 2.75rem;
-}
 .small-card__body {
   width: 285px;
   height: auto !important;
@@ -701,7 +691,6 @@ ul li {
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 2.5rem;
 }
 .small-card__body:hover {
   border-radius: 4px;
@@ -745,7 +734,7 @@ ul li {
   transform: translate(-50%, -50%);
 }
 .small-card__info {
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1492,6 +1481,15 @@ ul li {
   max-width: 1890px;
   margin: 0 auto;
 }
+.arrivals-slider__products-card {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 2.75rem;
+}
+.arrivals-slider__products-card .small-card__body {
+  margin-bottom: 2rem;
+}
 .arrivals-slider__dots {
   display: flex;
   justify-content: center;
@@ -2167,6 +2165,197 @@ ul li {
 }
 .partners__icon {
   transform: scale(1.2);
+}
+
+.breadcrumbs {
+  background-color: #f4f5f7;
+  padding: 18.5px 0;
+}
+.breadcrumbs__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumbs__nav {
+  white-space: nowrap;
+  overflow: auto;
+}
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__item {
+  position: relative;
+  padding: 0 18px;
+}
+.breadcrumbs__item:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #9a9ca5;
+  border-bottom: 2px solid #9a9ca5;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 9px;
+  right: -2px;
+}
+.breadcrumbs__item:first-child {
+  padding-left: 0;
+}
+.breadcrumbs__item:last-child:after {
+  display: none;
+}
+.breadcrumbs__link {
+  color: #424551;
+  transition: color 0.25s ease;
+}
+.breadcrumbs__link:hover {
+  color: #17696a;
+  transition: color 0.25s ease;
+}
+.breadcrumbs__current {
+  color: #9a9ca5;
+}
+
+.active-filters__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.active-filters__item {
+  position: relative;
+  cursor: pointer;
+}
+.active-filters__item .active-filters__btn,
+.active-filters__item .active-filters__btn--all {
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.active-filters__item .active-filters__btn:hover,
+.active-filters__item .active-filters__btn--all:hover {
+  color: #17696a;
+  transition: color 0.25s ease;
+}
+.active-filters__btn {
+  color: #9a9ca5;
+  background-color: transparent;
+  border: none;
+  margin-left: 16px;
+}
+.active-filters__btn:before {
+  content: "x";
+  width: 14px;
+  height: 14px;
+  color: #9a9ca5;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.active-filters__btn--all {
+  color: #424551;
+  background-color: transparent;
+  border: none;
+  margin-left: 16px;
+}
+.active-filters__btn--all:before {
+  content: "x";
+  width: 14px;
+  height: 14px;
+  color: #424551;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.catalog {
+  padding: 32px 0 51px 0;
+}
+.catalog__container {
+  display: grid;
+  grid-template-columns: 255px 1fr;
+  gap: 60px;
+}
+
+.filter-catalog__title {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #17696a;
+  border-radius: 4px;
+  color: #17696a;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  background-color: #17696a;
+  color: #fff;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+.filter-catalog__title:hover {
+  background-color: #17696a;
+  color: #bec1c6;
+  transition: all 0.25s ease;
+}
+.filter-catalog__item {
+  margin-bottom: 40px;
+  position: relative;
+}
+.filter-catalog__item:after {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid #e5e8ed;
+  color: #e5e8ed;
+  position: absolute;
+  left: 0;
+}
+.filter-catalog__item:last-child:after {
+  display: none;
+}
+
+.clothes-filter__content,
+.size-filter__content,
+.colors-filter__content,
+.material-filter__content,
+.brands-filter__content,
+.price-filter__content {
+  margin: 16px 0;
+}
+
+.products__card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 285px));
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 10px;
+  padding-bottom: 45px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pagination__arrow {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.pagination__arrow.disabled {
+  display: none;
+}
+.pagination__list {
+  display: flex;
+  gap: 20px;
+}
+.pagination__link {
+  font-weight: 700;
+  color: #424551;
+}
+.pagination__link.active {
+  color: #17696a;
 }
 
 .news-subscribe {
