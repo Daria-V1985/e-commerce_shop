@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
+    <script type="module" src="./assets/js/app.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/sliders.js" defer></script>
     <script src="./assets/js/timer.js" defer></script>
     <title>CREATEX -  интернет-магазин стильной одежды</title>
   </head>
@@ -662,11 +663,11 @@
           <div class="header-bottom__actions actions-header">
             <div class="actions-header__favorite">
               <a class="actions-header__favorite-link _icon-favorite" href="#"></a>
-              <p class="actions-header__favorite-num">2</p>
+              <p class="actions-header__favorite-num">0</p>
             </div>
             <div class="actions-header__basket">
               <a class="actions-header__basket-link _icon-basket" href="#"></a>
-              <p class="actions-header__basket-num">4</p>
+              <p class="actions-header__basket-num">0</p>
             </div>
           </div>
         </div>
@@ -722,7 +723,10 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-1.jpg" alt="Двухцветная бейсболка">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                    <div class="small-card__label small-card__label_hit">hit</div>
+                  </div>
                   <div class="small-card__rating rating">
                     <div class="rating__items" data-total-value="5">
                       <div class="rating__item" data-item-value="5"></div>
@@ -735,9 +739,8 @@
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Двухцветная бейсболка</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">900<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">900 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -765,13 +768,14 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-2.jpg" alt="Солнечные очки с металлической оправой">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Солнечные очки с металлической оправой</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">8995<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">8995 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -800,13 +804,14 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Зеленый детский комбинезон</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">1700<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">1700 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -835,13 +840,15 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                    <div class="small-card__label small-card__label_hit">hit</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">3500<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">3500 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -871,7 +878,10 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-5.jpg" alt="Висячие серьги">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                    <div class="small-card__label small-card__label_hit">hit</div>
+                  </div>
                   <div class="small-card__rating rating">
                     <div class="rating__items" data-total-value="4">
                       <div class="rating__item" data-item-value="5"></div>
@@ -883,10 +893,9 @@
                   </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
-                    <div class="small-card__info-title">Красные висячие серьги</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">1290<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-title">Висячие серьги</div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">1290 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -911,13 +920,14 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-6.jpg" alt="Детские туфли со шнурками">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Детские туфли со шнурками</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">3290<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">3290 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -945,13 +955,15 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                    <div class="small-card__label small-card__label_hit">hit</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Зеленый детский комбинезон</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">1700<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">1700 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -980,13 +992,14 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">3500<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">3500 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -1016,7 +1029,9 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-1.jpg" alt="Двухцветная бейсболка">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__rating rating">
                     <div class="rating__items" data-total-value="5">
                       <div class="rating__item" data-item-value="5"></div>
@@ -1029,9 +1044,8 @@
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Двухцветная бейсболка</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">900<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">900 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -1059,13 +1073,14 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-2.jpg" alt="Солнечные очки с металлической оправой">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Солнечные очки с металлической оправой</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">8995<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">8995 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -1094,13 +1109,15 @@
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                    <div class="small-card__label small-card__label_hit">hit</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Зеленый детский комбинезон</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">1700<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">1700 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -1125,17 +1142,18 @@
                     </div>
                   </div>
                 </article>
-                <article class="small-card__body swiper-slide">
+                <article data-pid="12" class="small-card__body swiper-slide">
                   <div class="small-card__img">
                     <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
                   </div>
-                  <div class="small-card__sale"></div>
+                  <div class="small-card__labels">
+                    <div class="small-card__label small-card__label_new">new</div>
+                  </div>
                   <div class="small-card__favorite _icon-favorite"></div>
                   <div class="small-card__info">
                     <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
-                    <div class="small-card__info-price">
-                      <div class="small-card__info-price price-new">3500<span>&#8381;</span></div>
-                      <div class="small-card__info-price"></div>
+                    <div class="small-card__info-prices">
+                      <div class="small-card__info-price">3500 <span>&#8381;</span></div>
                     </div>
                     <div class="small-card__info-hidden">
                       <div class="small-card__dop card-dop">
@@ -1285,13 +1303,15 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-1.jpg" alt="Кофта с кружевными вставками">
                   </div>
-                  <div class="large-card__sale"></div>
+                  <div class="large-card__labels">
+                    <div class="large-card__label large-card__label_sale">30%</div>
+                  </div>
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Кофта с кружевными вставками</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">4989<span>&#8381;</span></div>
-                      <div class="large-card__info-price"></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">4989 <span>&#8381;</span></div>
+                      <div class="large-card__info-price large-card__info-price_old">6740 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1319,7 +1339,7 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-2.jpg" alt="Часы-хронограф с кожаным ремешком">
                   </div>
-                  <div class="large-card__sale"></div>
+                  <div class="large-card__labels"></div>
                   <div class="large-card__rating rating">
                     <div class="rating__items" data-total-value="5">
                       <div class="rating__item" data-item-value="5"></div>
@@ -1332,9 +1352,8 @@
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Часы-хронограф с синим кожаным ремешком</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">12600<span>&#8381;</span></div>
-                      <div class="large-card__info-price"></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">12600 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1362,13 +1381,12 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-3.jpg" alt="Пальто в клетку с цветовым контрастом">
                   </div>
-                  <div class="large-card__sale"></div>
+                  <div class="large-card__labels"></div>
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Пальто в клетку с цветовым контрастом</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">18345<span>&#8381;</span></div>
-                      <div class="large-card__info-price"></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">18345 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1396,7 +1414,7 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-7.jpg" alt="Базовая толстовка с капюшоном">
                   </div>
-                  <div class="large-card__sale"></div>
+                  <div class="large-card__labels"></div>
                   <div class="large-card__rating rating">
                     <div class="rating__items" data-total-value="5">
                       <div class="rating__item" data-item-value="5"></div>
@@ -1409,9 +1427,8 @@
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Базовая толстовка с капюшоном розового цвета</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">3100<span>&#8381;</span></div>
-                      <div class="large-card__info-price"></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">3100 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1456,13 +1473,15 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-4.jpg" alt="Кожаная сумка через плечо">
                   </div>
-                  <div class="large-card__sale sale">50%</div>
+                  <div class="large-card__labels">
+                    <div class="large-card__label large-card__label_sale">50%</div>
+                  </div>
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Кожаная сумка через плечо с золотой фурнитурой</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">8950<span>&#8381;</span></div>
-                      <div class="large-card__info-price price-old">17900<span>&#8381;</span></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">8950 <span>&#8381;</span></div>
+                      <div class="large-card__info-price large-card__info-price_old">17900 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1487,7 +1506,9 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-5.jpg" alt="Пушап скинни джинсы">
                   </div>
-                  <div class="large-card__sale sale">50%</div>
+                  <div class="large-card__labels">
+                    <div class="large-card__label large-card__label_sale">50%</div>
+                  </div>
                   <div class="large-card__rating rating">
                     <div class="rating__items" data-total-value="5">
                       <div class="rating__item" data-item-value="5"></div>
@@ -1500,9 +1521,9 @@
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Пушап скинни джинсы</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">4000<span>&#8381;</span></div>
-                      <div class="large-card__info-price price-old">8000<span>&#8381;</span></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">4000 <span>&#8381;</span></div>
+                      <div class="large-card__info-price large-card__info-price_old">8000 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1530,13 +1551,15 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-6.jpg" alt="Замшевые ботильоны на широком каблуке">
                   </div>
-                  <div class="large-card__sale sale">20%</div>
+                  <div class="large-card__labels">
+                    <div class="large-card__label large-card__label_sale">20%</div>
+                  </div>
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Замшевые ботильоны на широком каблуке</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">11916<span>&#8381;</span></div>
-                      <div class="large-card__info-price price-old">14895<span>&#8381;</span></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">11916 <span>&#8381;</span></div>
+                      <div class="large-card__info-price large-card__info-price_old">14895 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">
@@ -1567,7 +1590,9 @@
                   <div class="large-card__img">
                     <img src="./assets/images/products/large-product-8.jpeg" alt="Укороченные шорты с подворотами">
                   </div>
-                  <div class="large-card__sale sale">20%</div>
+                  <div class="large-card__labels">
+                    <div class="large-card__label large-card__label_sale">20%</div>
+                  </div>
                   <div class="large-card__rating rating">
                     <div class="rating__items" data-total-value="5">
                       <div class="rating__item" data-item-value="5"></div>
@@ -1580,9 +1605,9 @@
                   <div class="large-card__favorite _icon-favorite"></div>
                   <div class="large-card__info">
                     <div class="large-card__info-title">Укороченные шорты с подворотами</div>
-                    <div class="large-card__info-price">
-                      <div class="large-card__info-price price-new">2000<span>&#8381;</span></div>
-                      <div class="large-card__info-price price-old">2400<span>&#8381;</span></div>
+                    <div class="large-card__info-prices">
+                      <div class="large-card__info-price">2000 <span>&#8381;</span></div>
+                      <div class="large-card__info-price large-card__info-price_old">2400 <span>&#8381;</span></div>
                     </div>
                     <div class="large-card__info-hidden">
                       <div class="large-card__dop card-dop">

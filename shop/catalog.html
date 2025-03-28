@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="./assets/js/app.js" defer></script>
+    <script type="module" src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/getCatalogCards.js" defer></script>
     <title>CREATEX -  интернет-магазин стильной одежды</title>
   </head>
   <body>
@@ -660,11 +660,11 @@
           <div class="header-bottom__actions actions-header">
             <div class="actions-header__favorite">
               <a class="actions-header__favorite-link _icon-favorite" href="#"></a>
-              <p class="actions-header__favorite-num">2</p>
+              <p class="actions-header__favorite-num">0</p>
             </div>
             <div class="actions-header__basket">
               <a class="actions-header__basket-link _icon-basket" href="#"></a>
-              <p class="actions-header__basket-num">4</p>
+              <p class="actions-header__basket-num">0</p>
             </div>
           </div>
         </div>
@@ -715,39 +715,39 @@
               Фильтр товаров
             </div>
             <div class="filter-catalog__items">
-              <div class="filter-catalog__item clothes-filter">
-                <div class="clothes-filter__title title">Одежда</div>
-                <div class="clothes-filter__content">
+              <div class="filter-catalog__item">
+                <div class="filter-catalog__item-title title">Одежда</div>
+                <div class="filter-catalog__item-content">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 </div>
               </div>
-              <div class="filter-catalog__item size-filter">
-                <div class="size-filter__title title">Одежда</div>
-                <div class="size-filter__content">
+              <div class="filter-catalog__item">
+                <div class="filter-catalog__item-title title">Размер</div>
+                <div class="filter-catalog__item-content">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 </div>
               </div>
-              <div class="filter-catalog__item colors-filter">
-                <div class="colors-filter__title title">Одежда</div>
-                <div class="colors-filter__content">
+              <div class="filter-catalog__item">
+                <div class="filter-catalog__item-title title">Цвет</div>
+                <div class="filter-catalog__item-content">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 </div>
               </div>
-              <div class="filter-catalog__item material-filter">
-                <div class="material-filter__title title">Одежда</div>
-                <div class="material-filter__content">
+              <div class="filter-catalog__item">
+                <div class="filter-catalog__item-title title">Материал</div>
+                <div class="filter-catalog__item-content">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 </div>
               </div>
-              <div class="filter-catalog__item brands-filter">
-                <div class="brands-filter__title title">Одежда</div>
-                <div class="brands-filter__content">
+              <div class="filter-catalog__item">
+                <div class="filter-catalog__item-title title">Бренд</div>
+                <div class="filter-catalog__item-content">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 </div>
               </div>
-              <div class="filter-catalog__item price-filter">
-                <div class="price-filter__title title">Одежда</div>
-                <div class="price-filter__content">
+              <div class="filter-catalog__item">
+                <div class="filter-catalog__item-title title">Цена</div>
+                <div class="filter-catalog__item-content">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 </div>
               </div>
@@ -755,345 +755,7 @@
           </div>
           <div class="catalog__products products">
             <div class="products__control control"></div>
-            <div class="products__card small-card">
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-1.jpg" alt="Двухцветная бейсболка">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__rating rating">
-                  <div class="rating__items" data-total-value="5">
-                    <div class="rating__item" data-item-value="5"></div>
-                    <div class="rating__item" data-item-value="4"></div>
-                    <div class="rating__item" data-item-value="3"></div>
-                    <div class="rating__item" data-item-value="2"></div>
-                    <div class="rating__item" data-item-value="1"></div>
-                  </div>
-                </div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Двухцветная бейсболка</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">900<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">54</div>
-                        <div class="card-dop__size">56</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle black"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle pink"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle blue"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-2.jpg" alt="Солнечные очки с металлической оправой">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Солнечные очки с металлической оправой</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">8995<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">55</div>
-                        <div class="card-dop__size">58</div>
-                        <div class="card-dop__size">62</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle green"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle darkgray"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle purple"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Зеленый детский комбинезон</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">1700<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">92</div>
-                        <div class="card-dop__size">98</div>
-                        <div class="card-dop__size">104</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle lightgreen"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle pink"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle yellow"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">3500<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">XS</div>
-                        <div class="card-dop__size">S</div>
-                        <div class="card-dop__size">M</div>
-                        <div class="card-dop__size">L</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle black"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle darkgray"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle lightblue"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-5.jpg" alt="Висячие серьги">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__rating rating">
-                  <div class="rating__items" data-total-value="4">
-                    <div class="rating__item" data-item-value="5"></div>
-                    <div class="rating__item" data-item-value="4"></div>
-                    <div class="rating__item" data-item-value="3"></div>
-                    <div class="rating__item" data-item-value="2"></div>
-                    <div class="rating__item" data-item-value="1"></div>
-                  </div>
-                </div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Красные висячие серьги</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">1290<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes"></div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle black"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle red"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle brown"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-6.jpg" alt="Детские туфли со шнурками">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Детские туфли со шнурками</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">3290<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">16</div>
-                        <div class="card-dop__size">18</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle lightgray"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle brown"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle pink"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Зеленый детский комбинезон</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">1700<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">92</div>
-                        <div class="card-dop__size">98</div>
-                        <div class="card-dop__size">104</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle lightgreen"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle pink"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle yellow"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">3500<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">XS</div>
-                        <div class="card-dop__size">S</div>
-                        <div class="card-dop__size">M</div>
-                        <div class="card-dop__size">L</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle black"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle darkgray"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle lightblue"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-              <article class="small-card__body">
-                <div class="small-card__img">
-                  <img src="./assets/images/products/small/product-1.jpg" alt="Двухцветная бейсболка">
-                </div>
-                <div class="small-card__sale"></div>
-                <div class="small-card__rating rating">
-                  <div class="rating__items" data-total-value="5">
-                    <div class="rating__item" data-item-value="5"></div>
-                    <div class="rating__item" data-item-value="4"></div>
-                    <div class="rating__item" data-item-value="3"></div>
-                    <div class="rating__item" data-item-value="2"></div>
-                    <div class="rating__item" data-item-value="1"></div>
-                  </div>
-                </div>
-                <div class="small-card__favorite _icon-favorite"></div>
-                <div class="small-card__info">
-                  <div class="small-card__info-title">Двухцветная бейсболка</div>
-                  <div class="small-card__info-price">
-                    <div class="small-card__info-price price-new">900<span>&#8381;</span></div>
-                    <div class="small-card__info-price"></div>
-                  </div>
-                  <div class="small-card__info-hidden">
-                    <div class="small-card__dop card-dop">
-                      <div class="card-dop__sizes">
-                        <div class="card-dop__size">54</div>
-                        <div class="card-dop__size">56</div>
-                      </div>
-                      <div class="card-dop__colors">
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle black"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle pink"></div>
-                        </div>
-                        <div class="card-dop__color">
-                          <div class="card-dop__color-circle blue"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
-                  </div>
-                </div>
-              </article>
-            </div>
+            <div class="products__card small-card"></div>
             <div class="products__pagination pagination">
               <button type="button" class="pagination__arrow pagination__arrow-left disabled">&#8592;</button>
               <ul class="pagination__list">
