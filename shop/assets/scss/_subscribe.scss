@@ -7,8 +7,6 @@
     gap: 150px;
     padding: 65px 0;
   }
-  &__inner {
-  }
   &__title {
     @extend %h2;
     font-size: 46px;
@@ -67,49 +65,6 @@
       &:hover {
         color: $white;
       }
-    }
-  }
-  &__img {
-  }
-}
-
-.checkbox {
-  &__input {
-    display: none;
-    &:checked + .checkbox__label:after {
-      transform: scale(1);
-      transition: all 0.5s ease;
-    }
-  }
-  &__label {
-    @extend %h6;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    cursor: pointer;
-    position: relative;
-    &:before {
-      content: '';
-      align-self: start;
-      flex: 0 0 15px;
-      height: 15px;
-      background-color: $white;
-      border: 1px solid $primary;
-      border-radius: 4px;
-      margin: 3px 12px 0 0;
-    }
-    &:after {
-      content: '';
-      width: 12px;
-      height: 12px;
-      position: absolute;
-      top: 5px;
-      left: 2px;
-      background-color: $primary;
-      border-radius: 4px;
-      transform: scale(0);
-      transition: all 0.5s ease;
     }
   }
 }

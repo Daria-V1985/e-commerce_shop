@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <script type="module" src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/getCatalogCards.js" defer></script>
     <title>CREATEX -  интернет-магазин стильной одежды</title>
   </head>
@@ -709,73 +709,247 @@
 
       <section class="catalog">
         <div class="catalog__container container">
-          <div class="catalog__filters filter-catalog">
-            <div class="filter-catalog__title">
+          <div class="catalog__control catalog-control">
+            <button class="catalog-control__btn">
               <span class="_icon-filter-1"></span>
-              Фильтр товаров
-            </div>
-            <div class="filter-catalog__items">
-              <div class="filter-catalog__item">
-                <div class="filter-catalog__item-title title">Одежда</div>
-                <div class="filter-catalog__item-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </div>
-              </div>
-              <div class="filter-catalog__item">
-                <div class="filter-catalog__item-title title">Размер</div>
-                <div class="filter-catalog__item-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </div>
-              </div>
-              <div class="filter-catalog__item">
-                <div class="filter-catalog__item-title title">Цвет</div>
-                <div class="filter-catalog__item-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </div>
-              </div>
-              <div class="filter-catalog__item">
-                <div class="filter-catalog__item-title title">Материал</div>
-                <div class="filter-catalog__item-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </div>
-              </div>
-              <div class="filter-catalog__item">
-                <div class="filter-catalog__item-title title">Бренд</div>
-                <div class="filter-catalog__item-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </div>
-              </div>
-              <div class="filter-catalog__item">
-                <div class="filter-catalog__item-title title">Цена</div>
-                <div class="filter-catalog__item-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </div>
-              </div>
-            </div>
+              <p class="catalog-control__btn-text">Показать фильтры</p>
+            </button>
+
           </div>
-          <div class="catalog__products products">
-            <div class="products__control control"></div>
-            <div class="products__card small-card"></div>
-            <div class="products__pagination pagination">
-              <button type="button" class="pagination__arrow pagination__arrow-left disabled">&#8592;</button>
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link active">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">...</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">10</a>
-                </li>
-              </ul>
-              <button type="button" class="pagination__arrow pagination__arrow-right">&#8594;</button>
+          <div class="catalog__body">
+            <div class="catalog__filters filter-catalog">
+              <div class="filter-catalog__items">
+                <div class="filter-catalog__item">
+                  <div class="filter-catalog__item-title title">Одежда</div>
+                  <div class="filter-catalog__item-content content-item">
+                    <div class="content-item__container">
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_1" class="checkbox__input" type="checkbox" checked>
+                        <label for="c_1" class="checkbox__label">Пальто
+                          <span class="checkbox__counter">(16)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_2" class="checkbox__input" type="checkbox">
+                        <label for="c_2" class="checkbox__label">Пиджаки
+                          <span class="checkbox__counter">(12)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_3" class="checkbox__input" type="checkbox">
+                        <label for="c_3" class="checkbox__label">Костюмы
+                          <span class="checkbox__counter">(5)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_4" class="checkbox__input" type="checkbox">
+                        <label for="c_4" class="checkbox__label">Платья
+                          <span class="checkbox__counter">(11)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_5" class="checkbox__input" type="checkbox">
+                        <label for="c_5" class="checkbox__label">Кардиганы & свитера
+                          <span class="checkbox__counter">(18)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_6" class="checkbox__input" type="checkbox">
+                        <label for="c_6" class="checkbox__label">Свитшоты & худи
+                          <span class="checkbox__counter">(21)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_7" class="checkbox__input" type="checkbox">
+                        <label for="c_7" class="checkbox__label">Юбки
+                          <span class="checkbox__counter">(9)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-catalog__item">
+                  <div class="filter-catalog__item-title title">Размер</div>
+                  <div class="filter-catalog__item-content content-item">
+                    <div class="content-item__container">
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_8" class="checkbox__input" type="checkbox" checked>
+                        <label for="c_8" class="checkbox__label">XS
+                          <span class="checkbox__counter">(16)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_9" class="checkbox__input" type="checkbox">
+                        <label for="c_9" class="checkbox__label">S
+                          <span class="checkbox__counter">(12)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_10" class="checkbox__input" type="checkbox">
+                        <label for="c_10" class="checkbox__label">M
+                          <span class="checkbox__counter">(5)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_11" class="checkbox__input" type="checkbox">
+                        <label for="c_11" class="checkbox__label">L
+                          <span class="checkbox__counter">(11)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_12" class="checkbox__input" type="checkbox">
+                        <label for="c_12" class="checkbox__label">XL
+                          <span class="checkbox__counter">(18)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_13" class="checkbox__input" type="checkbox">
+                        <label for="c_13" class="checkbox__label">Plus Size
+                          <span class="checkbox__counter">(4)</span>
+                        </label>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                <div class="filter-catalog__item">
+                  <div class="filter-catalog__item-title title">Цвет</div>
+                  <div class="filter-catalog__item-content content-item">
+                    <div class="content-item__container">
+                      
+                    </div> 
+                  </div>
+                </div>
+                <div class="filter-catalog__item">
+                  <div class="filter-catalog__item-title title">Материал</div>
+                  <div class="filter-catalog__item-content content-item">
+                    <div class="content-item__container">
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_15" class="checkbox__input" type="checkbox" checked>
+                        <label for="c_15" class="checkbox__label">Хлопок
+                          <span class="checkbox__counter">(162)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_16" class="checkbox__input" type="checkbox">
+                        <label for="c_16" class="checkbox__label">Синтетика
+                          <span class="checkbox__counter">(12)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_17" class="checkbox__input" type="checkbox">
+                        <label for="c_17" class="checkbox__label">Искуственная кожа
+                          <span class="checkbox__counter">(26)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_18" class="checkbox__input" type="checkbox">
+                        <label for="c_18" class="checkbox__label">Натуральная кожа
+                          <span class="checkbox__counter">(5)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_19" class="checkbox__input" type="checkbox">
+                        <label for="c_19" class="checkbox__label">Замша
+                          <span class="checkbox__counter">(19)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_20" class="checkbox__input" type="checkbox">
+                        <label for="c_20" class="checkbox__label">Кашемир
+                          <span class="checkbox__counter">(41)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_21" class="checkbox__input" type="checkbox">
+                        <label for="c_21" class="checkbox__label">Деним
+                          <span class="checkbox__counter">(48)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-catalog__item">
+                  <div class="filter-catalog__item-title title">Бренд</div>
+                  <div class="filter-catalog__item-content content-item">
+                    <div class="content-item__container">
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_22" class="checkbox__input" type="checkbox" checked>
+                        <label for="c_22" class="checkbox__label">Adidas
+                          <span class="checkbox__counter">(16)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_23" class="checkbox__input" type="checkbox">
+                        <label for="c_23" class="checkbox__label">Ann Taylor
+                          <span class="checkbox__counter">(12)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_24" class="checkbox__input" type="checkbox">
+                        <label for="c_24" class="checkbox__label">Armani
+                          <span class="checkbox__counter">(5)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_25" class="checkbox__input" type="checkbox">
+                        <label for="c_25" class="checkbox__label">Banana Republic
+                          <span class="checkbox__counter">(11)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_26" class="checkbox__input" type="checkbox">
+                        <label for="c_26" class="checkbox__label">Befree
+                          <span class="checkbox__counter">(18)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_27" class="checkbox__input" type="checkbox">
+                        <label for="c_27" class="checkbox__label">Calvin Klein
+                          <span class="checkbox__counter">(21)</span>
+                        </label>
+                      </div>
+                      <div class="content-item__checkbox checkbox">
+                        <input id="c_28" class="checkbox__input" type="checkbox">
+                        <label for="c_28" class="checkbox__label">Columbia
+                          <span class="checkbox__counter">(9)</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-catalog__item">
+                  <div class="filter-catalog__item-title title">Цена</div>
+                  <div class="filter-catalog__item-content content-item">
+                    <div class="content-item__container">
+                      <div class="content-item__price price-filter"></div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__products products">
+              <div class="products__card small-card"></div>
+              <div class="products__pagination pagination">
+                <button type="button" class="pagination__arrow pagination__arrow-left disabled">&#8592;</button>
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link active">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">...</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">10</a>
+                  </li>
+                </ul>
+                <button type="button" class="pagination__arrow pagination__arrow-right">&#8594;</button>
+              </div>
             </div>
           </div>
         </div>
