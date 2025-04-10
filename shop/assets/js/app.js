@@ -23,22 +23,24 @@ function catalogBtnOpen() {
 
 // Accardion
 
+function accordeonHandler() {
+  const filterCatalogItem = document.querySelectorAll('.filter-catalog__item');
+  const filterCatalogItemTitle = document.querySelectorAll('.filter-catalog__item-title');
+
+  filterCatalogItemTitle.forEach((title) => {
+    title.addEventListener('click', () => {
+      const parent = title.parentElement;
+
+      if(!parent.classList.contains('active')) {
+        parent.classList.add('active');
+      } else {
+        parent.classList.remove('active');
+      }
+    });
+  });
+}
+
+accordeonHandler();
 
 
-
-/* catalogFilters.forEach(item => {
-  item.addEventListener('click', itemHandler);
-});
-
-function itemHandler(e) {
-  //e.preventDefault();
-  let catalogFilters = e.target.closest('.filter-catalog__item');
-  let contentItem = e.target.nextElementSibling;
-  e.currentTarget.classList.toggle('open');
-  if (catalogFilters.classList.contains('open')) {
-    contentItem.style.maxHeight = contentItem.scrollHeight + 'px';
-  } else {
-    contentItem.style.maxHeight = 0;
-  }
-}  */
 

@@ -203,6 +203,7 @@ ul li {
 // Products card
 
 .small-card {
+  cursor: pointer;
   &__body {
     width: 285px;
     height: auto !important;
@@ -213,7 +214,7 @@ ul li {
     justify-content: space-between;
     &:hover {
       border-radius: 4px;
-      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 50px 50px -10px rgba(154, 156, 165, 0.16);
       transition: box-shadow 0.25s ease;
     }
     &:hover .small-card__info-hidden {
@@ -348,7 +349,7 @@ ul li {
     &:hover {
       background-color: $white;
       border-radius: 4px;
-      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 50px 50px -10px rgba(154, 156, 165, 0.16);
       transition: all 0.25s ease;
     }
     &:hover .large-card__info-hidden {

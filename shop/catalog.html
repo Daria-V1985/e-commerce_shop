@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js" defer></script>
     <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/getCatalogCards.js" defer></script>
+    <script src="./assets/js/sorting.js" defer></script>
     <title>CREATEX -  интернет-магазин стильной одежды</title>
   </head>
   <body>
@@ -714,7 +717,36 @@
               <span class="_icon-filter-1"></span>
               <p class="catalog-control__btn-text">Показать фильтры</p>
             </button>
-
+            <div class="catalog-control__panel control-panel">
+              <div class="control-panel__sorting">
+                <h4 class="control-panel__sorting-name">Сортировка</h4>
+                <div class="control-panel__sorting-dropdown dropdown">
+                  <button class="dropdown__button">По популярности
+                    <span class="_icon-down-chevron"></span>
+                  </button>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="popular">По популярности</li>
+                    <li class="dropdown__list-item" data-value="rating">По рейтингу</li>
+                    <li class="dropdown__list-item" data-value="price-up">По увеличению цены</li>
+                    <li class="dropdown__list-item" data-value="price-down">По уменьшению цены</li>
+                  </ul>
+                  <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                </div>
+              </div>
+              <div class="control-panel__view">
+                <h4 class="control-panel__view-name">Показать</h4>
+                <div class="control-panel__view-count">
+                  <label class="view-count">
+                    <input type="number" min="6" max="18" value="12" class="input-short" />
+                  </label>
+                  <div class="view-count__arrows">
+                    <span class="view-count__arrow-up _icon-down-chevron"></span>
+                    <span class="view-count__arrow-down _icon-down-chevron"></span>
+                  </div>
+                </div>
+                <p class="control-panel__view-text">продуктов на странице</p>
+              </div>
+            </div>
           </div>
           <div class="catalog__body">
             <div class="catalog__filters filter-catalog">
@@ -815,7 +847,38 @@
                   <div class="filter-catalog__item-title title">Цвет</div>
                   <div class="filter-catalog__item-content content-item">
                     <div class="content-item__container">
-                      
+                      <div class="content-item__colors ">
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle black"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle pink"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle blue"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle brown"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle red"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle green"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle yellow"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle darkblue"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle darkgray"></div>
+                        </div>
+                        <div class="content-item__color">
+                          <div class="content-item__color-circle lightgreen"></div>
+                        </div>
+                      </div>
                     </div> 
                   </div>
                 </div>
@@ -921,7 +984,22 @@
                   <div class="filter-catalog__item-title title">Цена</div>
                   <div class="filter-catalog__item-content content-item">
                     <div class="content-item__container">
-                      <div class="content-item__price price-filter"></div>
+                      <div class="content-item__price price-filter">
+                        <div class="price-filter__slider slider" id="range-slider"></div>
+                        <div class="price-filter__inputs">
+                          <label class="price-filter__label">
+                            <span class="price-filter__text">от</span>
+                            <input type="number" min="500" max="120000" placeholder="500" class="price-filter__input" id="min_num">
+                            <span class="price-filter__text">₽</span>
+                          </label>
+                          <span class="price-filter__separator">—</span>
+                          <label class="price-filter__label">
+                            <span class="price-filter__text">до</span>
+                            <input type="number" min="500" max="120000" placeholder="120000" class="price-filter__input" id="max_num">
+                            <span class="price-filter__text">₽</span>
+                          </label>
+                        </div>
+                      </div>
                     </div> 
                   </div>
                 </div>
