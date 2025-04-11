@@ -9,8 +9,8 @@ dropdown.forEach(dropDownWrapper => {
   // Sorting by popular/rating/price
 
   dropdownBtn.addEventListener('click', () => {
+    dropdownBtn.classList.add('dropdown__list--active');
     dropdownList.classList.toggle('dropdown__list--visible');
-    this.classList.add('dropdown__list--active');
   });
 
   dropdownListItem.forEach(item => {
@@ -91,14 +91,11 @@ if (rangeSlider) {
 		let arr = [null, null];
 		arr[i] = value;
 
-		console.log(arr);
-
 		rangeSlider.noUiSlider.set(arr);
 	};
 
 	inputs.forEach((el, index) => {
 		el.addEventListener('change', (e) => {
-			console.log(index);
 			setRangeSlider(index, e.currentTarget.value);
 		});
 	});

@@ -2196,9 +2196,10 @@ ul li {
 }
 
 .noUi-horizontal .noUi-handle {
-  width: 12px !important;
-  height: 12px !important;
+  width: 14px !important;
+  height: 14px !important;
   right: -10px !important;
+  cursor: pointer;
 }
 
 .noUi-horizontal .noUi-handle-upper {
