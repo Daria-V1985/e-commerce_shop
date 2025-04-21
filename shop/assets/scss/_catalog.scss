@@ -118,7 +118,7 @@
   margin-bottom: 34px;
   &__btn {
     width: 100%;
-    @include btn;
+    @include btn-white;
     @extend %title;
     text-transform: none;
     letter-spacing: 0.5px;
@@ -225,7 +225,7 @@
         background: $white;
         color: $gray800;
         border: 1px solid $gray400;
-        border-radius: 4px;
+        border-radius: $borderRadius;
         appearance: textfield;
         &::-webkit-outer-spin-button,
         &::-webkit-inner-spin-button {
@@ -277,7 +277,7 @@
     background: $white;
     color: $gray800;
     border: 1px solid $gray400;
-    border-radius: 4px;
+    border-radius: $borderRadius;
     height: 46px;
     padding: 8px;
     font-size: 14px;
@@ -299,7 +299,7 @@
     position: absolute;
 	  left: 0;
 	  top: 52px;
-    border-radius: 4px;
+    border-radius: $borderRadius;
 	  width: 185px;
 	  z-index: 1;
     &--visible {
@@ -378,7 +378,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //gap: 12px;
   }
   &__label {
     display: flex;
@@ -386,7 +385,7 @@
     width: 110px;
     height: 46px;
     border: 1px solid $gray400;
-    border-radius: 4px;
+    border-radius: $borderRadius;
     padding: 0 8px;
   }
   &__text {
@@ -414,7 +413,7 @@
 .noUi-target {
 	background-color: $gray400 !important;
 	border: none !important;
-	border-radius: 4px;
+	border-radius: $borderRadius;
 	box-shadow: none !important;
 	height: 2px !important;
 }

@@ -47,7 +47,7 @@
     letter-spacing: 0.5px;
     text-align: center;
     &.btn-left {
-      @include btn;
+      @include btn-white;
       padding: 15px 40px;
       margin-right: 1.5rem;
       color: $primary;
@@ -56,7 +56,7 @@
       }
     }
     &.btn-right {
-      @include btn;
+      @include btn-white;
       padding: 15px 40px;
       background: $primary;
       color: $white;
@@ -83,12 +83,6 @@
   &__item {
     width: 24.4rem;
     height: auto;
-    transform: scale(1);
-    transition: all 0.25s ease;   
-    &:hover {
-      transform: scale(1.1);
-      transition: all 0.25s ease;
-    }
   }
   &__img {
     border-radius: 4px;
@@ -265,7 +259,7 @@
       margin-bottom: 2.5rem;
     }
     &-btn {
-      @include btn;
+      @include btn-white;
       color: $primary;
       font-size: 14px;
       font-weight: 700;
@@ -294,7 +288,7 @@
       margin-bottom: 2.5rem;
     }
     &-btn {
-      @include btn;
+      @include btn-white;
       color: $primary;
       font-size: 14px;
       font-weight: 700;
@@ -348,7 +342,7 @@
       margin-bottom: 2.5rem;
     }
     &-btn {
-      @include btn;
+      @include btn-white;
       color: $primary;
       font-size: 14px;
       font-weight: 700;
@@ -411,7 +405,7 @@
     }
   }
   &__form-btn {
-    @include btn;
+    @include btn-white;
     font-weight: 700;
     background-color: $primary;
     color: $white;
@@ -480,7 +474,7 @@
     margin-bottom: 0.35rem;
   }
   &__btn {
-    @include btn;
+    @include btn-white;
     padding: 17px 32px;
     font-size: 1rem;
     font-weight: 700;
@@ -540,7 +534,7 @@
     margin-bottom: 0.35rem;
   }
   &__btn {
-    @include btn;
+    @include btn-white;
     padding: 17px 32px;
     font-size: 1rem;
     font-weight: 700;
@@ -669,7 +663,7 @@
       padding-bottom: 60px;
     }
     &-btn {
-      @include btn;
+      @include btn-white;
       width: 190px;
       display: flex;
       justify-content: center;
@@ -699,7 +693,7 @@
     margin-bottom: 60px;
   }
   &__btn {
-    @include btn;
+    @include btn-white;
     position: absolute;
     top: 0;
     right: 0;
@@ -797,6 +791,8 @@
 @import "subscribe";
 
 @import "footer";
+
+@import "popup";
 
 @import "media";
 

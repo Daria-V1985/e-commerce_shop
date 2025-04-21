@@ -1,33 +1,10 @@
-// Open/close filters list
-
-const catalogFiltersBtn = document.querySelector('.catalog-control__btn');
-
-catalogFiltersBtn.addEventListener('click', catalogBtnOpen);
-
-function catalogBtnOpen() {
-  const catalogControlBtnText = document.querySelector('.catalog-control__btn-text');
-  const catalogBody = document.querySelector('.catalog__body');
-  const filterCatalogItems = document.querySelector('.filter-catalog__items');
-  const productsCard = document.querySelector('.products__card');
-  
-  if (filterCatalogItems.classList.toggle('open-filter')) {
-    catalogBody.classList.add('open-filter');
-    productsCard.classList.add('open-filter');
-    catalogControlBtnText.textContent = 'Спрятать фильтры';
-  } else {
-    catalogBody.classList.remove('open-filter');
-    productsCard.classList.remove('open-filter');
-    catalogControlBtnText.textContent = 'Показать фильтры';
-  }
-};
-
 // Accardion
 
 function accordeonHandler() {
   const filterCatalogItem = document.querySelectorAll('.filter-catalog__item');
   const filterCatalogItemTitle = document.querySelectorAll('.filter-catalog__item-title');
 
-  filterCatalogItemTitle.forEach((title) => {
+  filterCatalogItemTitle.forEach(title => {
     title.addEventListener('click', () => {
       const parent = title.parentElement;
 
@@ -42,5 +19,15 @@ function accordeonHandler() {
 
 accordeonHandler();
 
+/* // Open/close submenu list
 
+const catalogMenuLinks = document.querySelectorAll('.catalog-menu__link');
+const subMenuCatalog = document.querySelectorAll('.sub-menu-catalog');
 
+    for (let index = 0; index < catalogMenuLinks.length; index++) {
+      const submenuParent = catalogMenuLinks[index];
+      submenuParent.addEventListener('click', function (e) {
+        submenuParent.parentElement.classList.toggle('active-menu');
+        //e.preventDefault();
+      });
+    }     */

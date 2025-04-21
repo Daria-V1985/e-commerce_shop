@@ -37,8 +37,8 @@
       width: 215px;
       padding: 12px 16px;
       border: 1px solid $submenu;
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
+      border-top-left-radius: $borderRadius;
+      border-bottom-left-radius: $borderRadius;
       outline: none;
       &:focus {
         border: 1px solid $primary;
@@ -50,7 +50,7 @@
       }
     }
     &-btn {
-      @include btn;
+      @include btn-white;
       font-weight: 700;
       background-color: $primary;
       color: $white;

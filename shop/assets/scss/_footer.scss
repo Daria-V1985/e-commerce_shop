@@ -2,8 +2,6 @@
   background-color: #000;
   color: $white;
   padding-top: 60px;
-  &__container {
-  }
   &__body {
     margin-bottom: 40px;
   }
@@ -53,21 +51,6 @@
 .contacts {
   &__data {
     margin-bottom: 24px;
-  }
-}
-
-.social {
-  &__icon {
-    background-color: $gray800;
-    border-radius: 4px;
-    padding: 8px;
-    margin-right: 12px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  span {
-    color: $white;
   }
 }
 

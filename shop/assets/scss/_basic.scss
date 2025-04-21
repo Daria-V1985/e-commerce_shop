@@ -32,6 +32,16 @@ $danger: #ff4242;
 $warning: #f89828;
 $info: #5a87fc;
 
+$fontFamily: 'Lato', sans-serif;
+$fontWeight400: 400;
+$fontWeight500: 500;
+$fontWeight600: 600;
+$fontWeight700: 700;
+$fontWeight900: 900;
+$borderRadius: 4px;
+$cursor: pointer;
+$transition1: all .25s ease;
+
 // Наследование
 
 %container {
@@ -90,17 +100,32 @@ $info: #5a87fc;
 
 // Миксины
 
-@mixin btn {
-  padding: 12px 24px;
+@mixin btn-white {
+  padding: 12px 40px;
   background-color: transparent;
   border: 1px solid $primary;
-  border-radius: 4px;
+  border-radius: $borderRadius;
   color: $primary;
   transition: all 0.25s ease;
   cursor: pointer;
   &:hover {
     background-color: $primary;
     color: $submenu;
+    transition: all 0.25s ease;
+  }
+}
+
+@mixin btn-green {
+  padding: 12px 40px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: $borderRadius;
+  color: $white;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: $white;
+    color: $primary;
     transition: all 0.25s ease;
   }
 }
@@ -120,7 +145,7 @@ body {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $fontFamily;
   font-size: 1rem;
   line-height: 1.6;
   max-width: 100vw;
@@ -145,45 +170,23 @@ ul li {
   list-style: none;
 }
 
-.container {
-  @extend %container;
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.lock {
-  overflow: hidden;
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  @extend %container;
 }
 
 .title {
   @extend %title;
   font-size: 16px;
-}
-
-._active {
-  position: relative;
-  &:before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(
-      -45deg,
-      rgba(218, 219, 221, 0) 0%,
-      rgba(218, 219, 221, 0.5) 12.326%,
-      rgb(218, 219, 221) 51.91%,
-      rgba(218, 219, 221, 0.5) 87.848%,
-      rgba(218, 219, 221, 0) 100%
-    );
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.25s;
-  }
-  &:hover:before {
-    transform: scaleX(1);
-    transform-origin: center;
-    transition: transform 0.25s;
-  }
 }
 
 .arrow {
@@ -213,7 +216,7 @@ ul li {
     flex-direction: column;
     justify-content: space-between;
     &:hover {
-      border-radius: 4px;
+      border-radius: $borderRadius;
       box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 50px 50px -10px rgba(154, 156, 165, 0.16);
       transition: box-shadow 0.25s ease;
     }
@@ -243,7 +246,7 @@ ul li {
   &__label {
     color: $white;
     padding: 1px 6px;
-    border-radius: 4px;
+    border-radius: $borderRadius;
     text-transform: capitalize;
     &_sale {
       background-color: $danger;
@@ -313,13 +316,12 @@ ul li {
     transition: opacity 0.25s ease;
     }
     &-btn {
-      @include btn;
+      @include btn-white;
       background: $primary;
       color: $white;
       span {
         font-size: 14px;
         font-weight: 700;
-        //line-height: 36px;
         letter-spacing: 0.5px;
         padding-left: 9px;
       }
@@ -348,7 +350,7 @@ ul li {
     margin-bottom: 2.5rem;
     &:hover {
       background-color: $white;
-      border-radius: 4px;
+      border-radius: $borderRadius;
       box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),0px 12px 10px -6px rgba(154, 156, 165, 0.08),0px 30px 24px -10px rgba(154, 156, 165, 0.1),0px 50px 50px -10px rgba(154, 156, 165, 0.16);
       transition: all 0.25s ease;
     }
@@ -378,7 +380,7 @@ ul li {
   &__label {
     color: $white;
     padding: 1px 6px;
-    border-radius: 4px;
+    border-radius: $borderRadius;
     text-transform: capitalize;
     &_sale {
       background-color: $danger;
@@ -449,19 +451,12 @@ ul li {
 
     }
     &-btn {
-      @include btn;
-      background: $primary;
-      color: $white;
+      @include btn-green;
       span {
         font-size: 14px;
         font-weight: 700;
-        //line-height: 36px;
         letter-spacing: 0.5px;
         padding-left: 9px;
-      }
-      &:hover {
-        background-color: transparent;
-        color: $primary;
       }
     }
   }
@@ -482,7 +477,7 @@ ul li {
     text-align: center;
     padding: 0 4px;
     border: 1px solid $submenu;
-    border-radius: 4px;
+    border-radius: $borderRadius;
     cursor: pointer;
     transition: border 0.25s ease;
     &:hover {
@@ -544,7 +539,7 @@ ul li {
       height: 15px;
       background-color: $white;
       border: 1px solid $primary;
-      border-radius: 4px;
+      border-radius: $borderRadius;
       margin: 3px 12px 0 0;
     }
     &:after {
@@ -556,7 +551,7 @@ ul li {
       left: 0;
       color: $white;
       background-color: $primary;
-      border-radius: 4px;
+      border-radius: $borderRadius;
       transform: scale(0);
       transition: all 0.5s ease;
       display: flex;
@@ -572,5 +567,106 @@ ul li {
     font-size: 14px;
     color: $gray600;
     margin-left: 5px;
+  }
+}
+
+// Form
+
+.form {
+  font-size: 14px;
+  font-weight: $fontWeight400;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 8px;
+    position: relative;
+  }
+  &__label {
+    color: $gray800;
+  }
+  &__input {
+    max-width: 100%;
+    width: 403px;
+    padding: 12px 16px;
+    border: 1px solid $gray400;
+    border-radius: $borderRadius;
+    outline: none;
+    &::placeholder {
+      color: $gray600;
+    }
+    &:focus {
+      border: 1px solid $primary;
+      transition: border 0.15s ease;
+      &::placeholder {
+        color: transparent;
+        transition: border 0.15s ease;
+      }
+    }
+  }
+  &__icon-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 61%;
+    right: 16px;
+    cursor: pointer;
+    .view {
+      ._icon-closed-eye {
+        display: none;
+      }
+      ._icon-eye {
+        display: block;
+        content: "\e91e";
+        
+      }
+    }
+  }
+  &__btn {
+    @include btn-green;
+    width: 100%;
+    font-weight: $fontWeight700;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  &__info {
+    font-weight: $fontWeight400;
+  }
+}
+
+// Social networks
+
+.social {
+  &__icon {
+    border-radius: $borderRadius;
+    padding: 8px;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--dark {
+      background-color: $gray800;
+      span {
+        color: $white;
+      }
+    }
+    &--light {
+      background: rgba($gray700, 0.12);
+      transition: all .25s ease;
+      span {
+        color: $gray700;
+      }
+      &:hover span {
+        color: $primary;
+        transition: all .25s ease;
+      }
+    }
   }
 }
