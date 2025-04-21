@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <script src="./assets/js/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./assets/js/sliders.js" defer></script>
+    <script src="./assets/js/timer.js" defer></script>
+    <script src="./assets/js/popup.js" defer></script>
+    <title>CREATEX -  интернет-магазин стильной одежды</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__top header-top">
+          <div class="header-top__container container">
+            <div class="header-top__phone">
+              <span>Телефон:</span>
+              <a href="tel:88125550128">(812) 555-0128</a>
+            </div>
+            <div class="header-top__menu top-menu">
+              <ul class="top-menu__list">
+                <li class="top-menu__item">
+                  <a href="#" class="top-menu__item-link">Доставка & возврат</a>
+                </li>
+                <li class="top-menu__item">
+                  <a href="#" class="top-menu__item-link">Трекер доставки</a>
+                </li>
+                <li class="top-menu__item">
+                  <a href="#" class="top-menu__item-link">Блог</a>
+                </li>
+                <li class="top-menu__item">
+                  <a href="#" class="top-menu__item-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-top__user user-panel">
+              <div class="user-panel__currency currency">
+                <div class="currency__count count-currency">
+                  <img class="count-currency__icon" src="./assets/images/flag-russia.png" alt="Валюта РФ">
+                  <div class="count-currency__text text--disabled">Рубль / &#8381;</div>
+                  <button class="count-currency__arrow arrow"></button>
+                  <ul class="count-currency__list">
+                    <li class="count-currency__item">
+                      <img class="count-currency__icon" src="./assets/images/flag-kazahstan.png" alt="Валюта Казахстана">
+                      <p class="count-currency__text">Тенге / &#8376;</p>
+                    </li>
+                    <li>
+                      <img class="count-currency__icon" src="./assets/images/flag-usa.png" alt="Валюта США"/>
+                      <p class="count-currency__text">Доллар / &#x24;</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user-panel__profile profile">
+                <div class="profile__icon">
+                  <span class="_icon-profile"></span>
+                  <a href="#" class="profile__link registration">Регистрация</a> /
+                  <span class="_icon-login"></span>
+                  <a href="#" class="profile__link login">Вход</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom header-bottom">
+          <div class="header-bottom__container container">
+            <a class="header-bottom__logo" href="main.html">
+              <img src="./assets/images/svg/logo.svg" alt="Логотип магазина" />
+            </a>
+            <nav class="header-bottom__catalog catalog-menu">
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a href="#" class="catalog-menu__link">Женщины</a>
+                  <div class="catalog-menu__sub-menu sub-menu-catalog">
+                    <div class="sub-menu-catalog__container container">
+                      <div class="sub-menu-catalog__block">
+                        <ul class="sub-menu-catalog__main-list">
+                          <h3 class="sub-menu-catalog__main-title">Женское</h3>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Новая</span> коллекция</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Лучшие</span> товары</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Plus</span> Size</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link _danger">Скидки до 70%</a>
+                          </li>
+                        </ul>
+                        <div class="sub-menu-catalog__wrapper">
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Одежда</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Обувь</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Аксессуары</a>
+                          </div>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пальто</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пиджаки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Костюмы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Платья</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кардиганы & свитера</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Свитшоты & худи</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Футболки & топы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Брюки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Джинсы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Шорты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Юбки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Нижнее белье</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Спортивная одежда</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Купальники</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сапоги</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Балетки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Туфли</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сланцы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Мюли</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Слипоны</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Лоферы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кроссовки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кеды</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сумки & рюкзаки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Шапки & шарфы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Аксессуары для волос</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ремни</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Украшения</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Наручные часы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Солнцезащитные очки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кошельки & портмоне</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Перчатки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Носки & колготки</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sub-menu-catalog__sale">
+                          <div class="sub-menu-catalog__sale-img">
+                            <img src="./assets/images/women.jpg" alt="Распродажа солнцезащитных очков">
+                          </div>
+                          <p class="sub-menu-catalog__sale-text">Распродажа солнцезащитных очков</p>
+                          <a class="sub-menu-catalog__sale-btn" href="#"><span>Посмотреть</span> &#8594;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="#" class="catalog-menu__link">Мужчины</a>
+                  <div class="catalog-menu__sub-menu sub-menu-catalog">
+                    <div class="sub-menu-catalog__container container">
+                      <div class="sub-menu-catalog__block">
+                        <ul class="sub-menu-catalog__main-list">
+                          <h3 class="sub-menu-catalog__main-title">Мужское</h3>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Новая</span> коллекция</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Лучшие</span> товары</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Plus</span> Size</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link _danger">Скидки до 50%</a>
+                          </li>
+                        </ul>
+                        <div class="sub-menu-catalog__wrapper">
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Одежда</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Обувь</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Аксессуары</a>
+                          </div>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пальто</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пиджаки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Костюмы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Рубашки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Лонгсливы & свитера</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Свитшоты & худи</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Футболки & майки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Брюки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Джинсы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Шорты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пижамы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Нижнее белье</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Спортивная одежда</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Спецодежда</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ботинки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Полуботинки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кеды</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кроссовки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сапоги</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Мокасины</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Туфли</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Лоферы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Унты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Тапочки</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сумки & рюкзаки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Шапки & шарфы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Галстуки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ремни</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Украшения</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Наручные часы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Солнцезащитные очки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кошельки & портмоне</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Перчатки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Носки</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sub-menu-catalog__sale">
+                          <div class="sub-menu-catalog__sale-img">
+                            <img src="./assets/images/men.jpg" alt="Распродажа мужских шапок">
+                          </div>
+                          <p class="sub-menu-catalog__sale-text">Распродажа мужских шапок</p>
+                          <a class="sub-menu-catalog__sale-btn" href="#"><span>Посмотреть</span> &#8594;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="#" class="catalog-menu__link">Девочки</a>
+                  <div class="catalog-menu__sub-menu sub-menu-catalog">
+                    <div class="sub-menu-catalog__container container">
+                      <div class="sub-menu-catalog__block">
+                        <ul class="sub-menu-catalog__main-list">
+                          <h3 class="sub-menu-catalog__main-title">Для девочек</h3>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Новая</span> коллекция</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Лучшие</span> товары</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Plus</span> Size</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link _danger">Скидки до 50%</a>
+                          </li>
+                        </ul>
+                        <div class="sub-menu-catalog__wrapper">
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Одежда</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Обувь</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Аксессуары</a>
+                          </div>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Белье</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Блузки & рубашки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Брюки & шорты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Юбки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Водолазки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Джемперы & кардиганы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Джинсовая одежда</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Карнавальные костюмы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Комбинезоны</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Жилеты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пижамы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Одежда для дома</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Школьная форма</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Купальники</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ботинки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Полуботинки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кеды</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кроссовки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сапоги</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Мокасины</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Туфли</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Лоферы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Унты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Тапочки</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сумки & рюкзаки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Шапки & шарфы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Аксессуары для волос</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ремни</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Украшения</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Зонтики</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Перчатки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Носки</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sub-menu-catalog__sale">
+                          <div class="sub-menu-catalog__sale-img">
+                            <img src="./assets/images/girls.jpg" alt="Распродажа аксессуаров для волос">
+                          </div>
+                          <p class="sub-menu-catalog__sale-text">Распродажа аксессуаров для волос</p>
+                          <a class="sub-menu-catalog__sale-btn" href="#"><span>Посмотреть</span> &#8594;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="#" class="catalog-menu__link">Мальчики</a>
+                  <div class="catalog-menu__sub-menu sub-menu-catalog">
+                    <div class="sub-menu-catalog__container container">
+                      <div class="sub-menu-catalog__block">
+                        <ul class="sub-menu-catalog__main-list">
+                          <h3 class="sub-menu-catalog__main-title">Для мальчиков</h3>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Новая</span> коллекция</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Лучшие</span> товары</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link"><span>Plus</span> Size</a>
+                          </li>
+                          <li class="sub-menu-catalog__main-item">
+                            <a href="#" class="sub-menu-catalog__main-link _danger">Скидки до 50%</a>
+                          </li>
+                        </ul>
+                        <div class="sub-menu-catalog__wrapper">
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Одежда</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Обувь</a>
+                          </div>
+                          <div class="sub-menu-catalog__category">
+                            <a href="#" class="sub-menu-catalog__link-category">Аксессуары</a>
+                          </div>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Белье</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Блузки & рубашки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Брюки & шорты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Подтяжки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Водолазки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Джемперы & кардиганы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Джинсовая одежда</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Карнавальные костюмы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Комбинезоны</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Жилеты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Пижамы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Одежда для дома</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Школьная форма</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Купальники</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ботинки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Полуботинки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кеды</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Кроссовки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сапоги</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Мокасины</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Туфли</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Лоферы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Унты</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Тапочки</a>
+                            </li>
+                          </ul>
+                          <ul class="sub-menu-catalog__list">
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Сумки & рюкзаки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Шапки & шарфы</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Аксессуары для волос</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Ремни</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Украшения</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Зонтики</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Перчатки</a>
+                            </li>
+                            <li class="sub-menu-catalog__item">
+                              <a href="#" class="sub-menu-catalog__link">Носки</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="sub-menu-catalog__sale">
+                          <div class="sub-menu-catalog__sale-img">
+                            <img src="./assets/images/boys.jpg" alt="Распродажа детских рубашек">
+                          </div>
+                          <p class="sub-menu-catalog__sale-text">Распродажа детских рубашек</p>
+                          <a class="sub-menu-catalog__sale-btn" href="#"><span>Посмотреть</span> &#8594;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="#" class="catalog-menu__link _danger">Акции</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-bottom__search search-header">
+              <form class="search-header__form" action="#">
+                <input class="search-header__input" placeholder="Поиск по сайту...">
+                <button class="search-header__button _icon-search"></button>
+              </form>
+            </div>
+            <div class="header-bottom__actions actions-header">
+              <nav class="header-bottom__menu-icon icon-menu">
+                <div class="icon-menu__list">
+                  <span></span>
+                </div>
+              </nav>
+              <div class="header-bottom__search mobile-search">
+                <form class="mobile-search__form" action="#">
+                  <button class="mobile-search__button _icon-search"></button>
+                </form>
+              </div>
+              <div class="actions-header__favorite">
+                <a class="actions-header__favorite-link _icon-favorite" href="#"></a>
+                <p class="actions-header__favorite-num">0</p>
+              </div>
+              <div class="actions-header__basket">
+                <a class="actions-header__basket-link _icon-basket" href="#"></a>
+                <p class="actions-header__basket-num">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__info info">
+              <div class="info__title">Новая коллекция</div>
+              <h1 class="info__subtitle">Menswear 2021</h1>
+              <a class="info__btn btn-left" href="catalog.html">Распродажа</a>
+              <a class="info__btn btn-right" href="catalog.html">К новинкам</a>
+            </div>
+            <div class="hero__img">
+              <img src="./assets/images/hero-view.png" alt="Menswear 2021" />
+            </div>
+          </div>
+        </section>
+    
+        <section class="top">
+          <div class="top__container container">
+            <div class="top__products top-products">
+              <a class="top-products__item" href="catalog.html">
+                <img class="top-products__img" src="./assets/images/women.jpg" alt="Топ женских вещей">
+                <p class="top-products__text">Для женщин</p>
+              </a>
+              <a class="top-products__item" href="catalog.html">
+                <img class="top-products__img" src="./assets/images/men.jpg" alt="Топ мужских вещей">
+                <p class="top-products__text">Для мужчин</p>
+              </a>
+              <a class="top-products__item" href="catalog.html">
+                <img class="top-products__img" src="./assets/images/girls.jpg" alt="Топ детских вещей">
+                <p class="top-products__text">Для детей</p>
+              </a>
+            </div>
+          </div>
+        </section>
+    
+        <section class="new-arrivals">
+          <div class="new-arrivals__container">
+            <div class="new-arrivals__names">
+              <h2 class="new-arrivals__title">Новые поступления</h2>
+              <p class="new-arrivals__text">Ознакомьтесь с нашими последними поступлениями на предстоящий сезон
+                <a href="catalog.html" class="new-arrivals__link">Посмотреть коллекцию можно здесь</a>
+              </p>
+            </div>
+            <div class="new-arrivals__slider arrivals-slider">
+              <div class="arrivals-slider__wrapper swiper">
+                <div class="arrivals-slider__products-card small-card swiper-wrapper">
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-1.jpg" alt="Двухцветная бейсболка">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                      <div class="small-card__label small-card__label_hit">hit</div>
+                    </div>
+                    <div class="small-card__rating rating">
+                      <div class="rating__items" data-total-value="5">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Двухцветная бейсболка</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">900 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-2.jpg" alt="Солнечные очки с металлической оправой">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Солнечные очки с металлической оправой</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">8995 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">55</div>
+                            <div class="card-dop__size">58</div>
+                            <div class="card-dop__size">62</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle green"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle darkgray"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle purple"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Зеленый детский комбинезон</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">1700 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">92</div>
+                            <div class="card-dop__size">98</div>
+                            <div class="card-dop__size">104</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightgreen"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle yellow"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                      <div class="small-card__label small-card__label_hit">hit</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">3500 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">XS</div>
+                            <div class="card-dop__size">S</div>
+                            <div class="card-dop__size">M</div>
+                            <div class="card-dop__size">L</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle darkgray"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightblue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-5.jpg" alt="Висячие серьги">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                      <div class="small-card__label small-card__label_hit">hit</div>
+                    </div>
+                    <div class="small-card__rating rating">
+                      <div class="rating__items" data-total-value="4">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Висячие серьги</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">1290 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes"></div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle red"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle brown"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-6.jpg" alt="Детские туфли со шнурками">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Детские туфли со шнурками</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">3290 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">16</div>
+                            <div class="card-dop__size">18</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightgray"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle brown"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                      <div class="small-card__label small-card__label_hit">hit</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Зеленый детский комбинезон</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">1700 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">92</div>
+                            <div class="card-dop__size">98</div>
+                            <div class="card-dop__size">104</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightgreen"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle yellow"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">3500 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">XS</div>
+                            <div class="card-dop__size">S</div>
+                            <div class="card-dop__size">M</div>
+                            <div class="card-dop__size">L</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle darkgray"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightblue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-1.jpg" alt="Двухцветная бейсболка">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__rating rating">
+                      <div class="rating__items" data-total-value="5">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Двухцветная бейсболка</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">900 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-2.jpg" alt="Солнечные очки с металлической оправой">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Солнечные очки с металлической оправой</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">8995 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">55</div>
+                            <div class="card-dop__size">58</div>
+                            <div class="card-dop__size">62</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle green"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle darkgray"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle purple"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-3.jpg" alt="Детский комбинезон">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                      <div class="small-card__label small-card__label_hit">hit</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Зеленый детский комбинезон</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">1700 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">92</div>
+                            <div class="card-dop__size">98</div>
+                            <div class="card-dop__size">104</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightgreen"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle yellow"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article data-pid="12" class="small-card__body swiper-slide">
+                    <div class="small-card__img">
+                      <img src="./assets/images/products/small/product-4.jpg" alt="Узкие укороченные джинсы средней посадки">
+                    </div>
+                    <div class="small-card__labels">
+                      <div class="small-card__label small-card__label_new">new</div>
+                    </div>
+                    <div class="small-card__favorite _icon-favorite"></div>
+                    <div class="small-card__info">
+                      <div class="small-card__info-title">Узкие укороченные джинсы средней посадки</div>
+                      <div class="small-card__info-prices">
+                        <div class="small-card__info-price">3500 <span>&#8381;</span></div>
+                      </div>
+                      <div class="small-card__info-hidden">
+                        <div class="small-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">XS</div>
+                            <div class="card-dop__size">S</div>
+                            <div class="card-dop__size">M</div>
+                            <div class="card-dop__size">L</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle darkgray"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle lightblue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="small-card__info-btn btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="arrivals-slider__dots swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="banners">
+          <div class="banners__container">
+            <div class="banners__wrapper">
+              <div class="banner__body banner-sale">
+                <img class="banner-sale__img" src="./assets/images/banners/banner-1.jpg" alt="Первый баннер">
+                <div class="banner-sale__info">
+                  <h2 class="banner-sale__info-title">летняя коллекция</h2>
+                  <h3 class="banner-sale__info-subtitle">Скидки до 70%</h3>
+                  <a class="banner-sale__info-btn" href="catalog.html"><span>Перейти к скидкам</span></a>
+                </div>
+              </div>
+              <div class="banner__body banner-offer">
+                <img src="./assets/images/banners/banner-2.jpg" alt="Второй баннер">
+                <div class="banner-offer__info">
+                  <h2 class="banner-offer__info-title">предложение недели</h2>
+                  <h3 class="banner-offer__info-subtitle">Оставайтесь в тепле с нашими новыми свитерами</h3>
+                  <a class="banner-offer__info-btn" href="catalog.html"><span>Купить сейчас</span></a>
+                  <div class="banner-offer__info-timer timer">
+                    <p class="timer__text">До конца предложения осталось</p>
+                    <div class="timer__inner">
+                      <div class="timer__items">
+                        <div class="timer__item">
+                          <h3 class="timer__count timer-count__days">06</h3>
+                          <div class="timer__date">дней</div>
+                        </div>
+                        <div class="timer__item">
+                          <h3 class="timer__count timer-count__hours">18</h3>
+                          <div class="timer__date">часов</div>
+                        </div>
+                        <div class="timer__item">
+                          <h3 class="timer__count timer-count__minutes">24</h3>
+                          <div class="timer__date">минут</div>
+                        </div>
+                        <div class="timer__item">
+                          <h3 class="timer__count timer-count__seconds">12</h3>
+                          <div class="timer__date">секунд</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="banner__body banner-new">
+                <img src="./assets/images/banners/banner-3.jpg" alt="Третий баннер">
+                <div class="banner-new__info">
+                  <h2 class="banner-new__info-title">новая коллекция</h2>
+                  <h3 class="banner-new__info-subtitle">Обувь & Сумки осень / зима 2021</h3>
+                  <a class="banner-new__info-btn" href="catalog.html"><span>Посмотреть</span> &#8594;</a>
+                </div>
+              </div>
+              <div class="banner__body banner-subscribe">
+                <img src="./assets/images/banners/banner-4.jpg" alt="Четвертый баннер">
+                <div class="banner-subscribe__info">
+                  <h2 class="banner-subscribe__info-title">Для всех новых подписчиков</h2>
+                  <h3 class="banner-subscribe__info-subtitle">Скидка 5% и бесплатная доставка</h3>
+                  <form action="#" class="banner-subscribe__form">
+                    <label for="subscribe-input" class="banner-subscribe__form-input">Email</label>
+                    <div class="banner-subscribe__form-line">
+                      <input type="text" id="subscribe-input" placeholder="Введите ваш e-mail"/>
+                      <button class="banner-subscribe__form-btn">Подписаться</button>
+                    </div>
+                    <p class="banner-subscribe__form-text">
+                      *Подпишитесь, чтобы первыми узнавать об эксклюзивных предложениях, специальных предложениях и предстоящих коллекциях.
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="popular-categories">
+          <div class="popular-categories__container container">
+            <h2 class="popular-categories__title">Популярные категории</h2>
+            <div class="popular-categories__items">
+              <a class="popular-categories__item" href="catalog.html">
+                <img class="popular-categories__img" src="./assets/images/categories/tops-categ.png" alt="Топы">
+                <p class="popular-categories__text">Топы</p>
+              </a>
+              <a class="popular-categories__item" href="catalog.html">
+                <img class="popular-categories__img" src="./assets/images/categories/t-shirt-categ.png" alt="Футболки">
+                <p class="popular-categories__text">Футболки</p>
+              </a>
+              <a class="popular-categories__item" href="catalog.html">
+                <img class="popular-categories__img" src="./assets/images/categories/caps-categ.png" alt="Кепки">
+                <p class="popular-categories__text">Кепки</p>
+              </a>
+              <a class="popular-categories__item" href="catalog.html">
+                <img class="popular-categories__img" src="./assets/images/categories/slancy-categ.png" alt="Сланцы">
+                <p class="popular-categories__text">Сланцы</p>
+              </a>
+              <a class="popular-categories__item" href="catalog.html">
+                <img class="popular-categories__img" src="./assets/images/categories/jakets-categ.png" alt="Пиджаки">
+                <p class="popular-categories__text">Пиджаки</p>
+              </a>
+              <a class="popular-categories__item" href="catalog.html">
+                <img class="popular-categories__img" src="./assets/images/categories/coats-categ.png" alt="Пальто">
+                <p class="popular-categories__text">Пальто</p>
+              </a>
+            </div>
+          </div>
+        </section>
+    
+        <section class="trends">
+          <div class="trends__container container">
+            <h2 class="trends__title">Сейчас в тренде</h2>
+            <div class="trends__slider trends-slider">
+              <div class="trends-slider__wrapper swiper">
+                <div class="trends-slider__arrows">
+                  <div class="trends-slider__arrow-left _icon-prev-btn"></div>
+                  <div class="trends-slider__arrow-right _icon-next-btn"></div>
+                </div>
+                <div class="trends-slider__products-card large-card swiper-wrapper">
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-1.jpg" alt="Кофта с кружевными вставками">
+                    </div>
+                    <div class="large-card__labels">
+                      <div class="large-card__label large-card__label_sale">30%</div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Кофта с кружевными вставками</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">4989 <span>&#8381;</span></div>
+                        <div class="large-card__info-price large-card__info-price_old">6740 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-2.jpg" alt="Часы-хронограф с кожаным ремешком">
+                    </div>
+                    <div class="large-card__labels"></div>
+                    <div class="large-card__rating rating">
+                      <div class="rating__items" data-total-value="5">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Часы-хронограф с синим кожаным ремешком</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">12600 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-3.jpg" alt="Пальто в клетку с цветовым контрастом">
+                    </div>
+                    <div class="large-card__labels"></div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Пальто в клетку с цветовым контрастом</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">18345 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-7.jpg" alt="Базовая толстовка с капюшоном">
+                    </div>
+                    <div class="large-card__labels"></div>
+                    <div class="large-card__rating rating">
+                      <div class="rating__items" data-total-value="5">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Базовая толстовка с капюшоном розового цвета</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">3100 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <a class="trends__btn" href="catalog.html">Перейти к скидкам</a>
+          </div>
+        </section>
+    
+        <section class="sales">
+          <div class="sales__container container">
+            <h2 class="sales__title">Скидки до 70%</h2>
+            <div class="sales__slider sales-slider">
+              <div class="sales-slider__wrapper swiper">
+                <div class="sales-slider__arrows">
+                  <div class="sales-slider__arrow-left _icon-prev-btn"></div>
+                  <div class="sales-slider__arrow-right _icon-next-btn"></div>
+                </div>
+                <div class="sales-slider__products-card large-card swiper-wrapper">
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-4.jpg" alt="Кожаная сумка через плечо">
+                    </div>
+                    <div class="large-card__labels">
+                      <div class="large-card__label large-card__label_sale">50%</div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Кожаная сумка через плечо с золотой фурнитурой</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">8950 <span>&#8381;</span></div>
+                        <div class="large-card__info-price large-card__info-price_old">17900 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes"></div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-5.jpg" alt="Пушап скинни джинсы">
+                    </div>
+                    <div class="large-card__labels">
+                      <div class="large-card__label large-card__label_sale">50%</div>
+                    </div>
+                    <div class="large-card__rating rating">
+                      <div class="rating__items" data-total-value="5">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Пушап скинни джинсы</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">4000 <span>&#8381;</span></div>
+                        <div class="large-card__info-price large-card__info-price_old">8000 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-6.jpg" alt="Замшевые ботильоны на широком каблуке">
+                    </div>
+                    <div class="large-card__labels">
+                      <div class="large-card__label large-card__label_sale">20%</div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Замшевые ботильоны на широком каблуке</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">11916 <span>&#8381;</span></div>
+                        <div class="large-card__info-price large-card__info-price_old">14895 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">36</div>
+                            <div class="card-dop__size">37</div>
+                            <div class="card-dop__size">38</div>
+                            <div class="card-dop__size">39</div>
+                            <div class="card-dop__size">40</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="large-card__body swiper-slide">
+                    <div class="large-card__img">
+                      <img src="./assets/images/products/large-product-8.jpeg" alt="Укороченные шорты с подворотами">
+                    </div>
+                    <div class="large-card__labels">
+                      <div class="large-card__label large-card__label_sale">20%</div>
+                    </div>
+                    <div class="large-card__rating rating">
+                      <div class="rating__items" data-total-value="5">
+                        <div class="rating__item" data-item-value="5"></div>
+                        <div class="rating__item" data-item-value="4"></div>
+                        <div class="rating__item" data-item-value="3"></div>
+                        <div class="rating__item" data-item-value="2"></div>
+                        <div class="rating__item" data-item-value="1"></div>
+                      </div>
+                    </div>
+                    <div class="large-card__favorite _icon-favorite"></div>
+                    <div class="large-card__info">
+                      <div class="large-card__info-title">Укороченные шорты с подворотами</div>
+                      <div class="large-card__info-prices">
+                        <div class="large-card__info-price">2000 <span>&#8381;</span></div>
+                        <div class="large-card__info-price large-card__info-price_old">2400 <span>&#8381;</span></div>
+                      </div>
+                      <div class="large-card__info-hidden">
+                        <div class="large-card__dop card-dop">
+                          <div class="card-dop__sizes">
+                            <div class="card-dop__size">54</div>
+                            <div class="card-dop__size">56</div>
+                          </div>
+                          <div class="card-dop__colors">
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle black"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle pink"></div>
+                            </div>
+                            <div class="card-dop__color">
+                              <div class="card-dop__color-circle blue"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="large-card__info-btn _icon-basket"><span>В корзину</span></button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <a class="sales__btn" href="catalog.html">Посмотреть еще</a>
+          </div>
+        </section>
+  
+        <section class="mobile-app">
+          <div class="mobile-app__container container">
+            <div class="mobile-app__img">
+              <img src="./assets/images/svg/createx-subscr.svg" alt="Мобильный шоппинг с нашим приложением">
+            </div>
+            <div class="mobile-app__desc">
+              <h2 class="mobile-app__desc-title">Насладитесь мобильным шопингом с нашим приложением Createx!</h2>
+              <div class="mobile-app__desc-links">
+                <a href="#" class="mobile-app__desc-link">
+                  <img src="./assets/images/svg/app-store.svg" alt="Приложение App Store">
+                </a>
+                <a href="#" class="mobile-app__desc-link">
+                  <img src="./assets/images/svg/google-play.svg" alt="Приложение Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="advantages">
+          <div class="advantages__container container">
+            <div class="advantages__items">
+              <div class="advantages__item-body item-body">
+                <div class="item-body__img _icon-ic-delivery"></div>
+                <h5 class="item-body__title">Быстрая доставка по всему миру</h5>
+                <p class="item-body__text">Получите бесплатную доставку при заказе от 2500 р.</p>
+              </div>
+              <div class="advantages__item-body item-body">
+                <div class="item-body__img _icon-ic-call-center"></div>
+                <h5 class="item-body__title">Поддержка клиентов</h5>
+                <p class="item-body__text">Наши операторы обеспечат вам круглосуточную поддержку</p>
+              </div>
+              <div class="advantages__item-body item-body">
+                <div class="item-body__img _icon-ic-shield"></div>
+                <h5 class="item-body__title">Гарантированный возврат денег</h5>
+                <p class="item-body__text">Мы возвращаем деньги в течение 30 дней с момента покупки</p>
+              </div>
+            </div>
+            <div class="advantages__telegram telegram">
+              <div class="telegram__info">
+                <h6 class="telegram__info-title">Подпишитесь на нас в Telegram</h6>
+                <p class="telegram__info-subtitle">@createx</p>
+                <a href="#" class="telegram__info-btn _icon-telegram"><span>Заглянуть</span></a>
+              </div>
+              <div class="telegram__pictures">
+                <img class="telegram__img" src="./assets/images/tg_img1.jpeg" alt="Изображение 1">
+                <img class="telegram__img" src="./assets/images/tg_img2.jpeg" alt="Изображение 2">
+                <img class="telegram__img" src="./assets/images/tg_img3.jpeg" alt="Изображение 3">
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="fashion-blog">
+          <div class="fashion-blog__container container">
+            <h2 class="fashion-blog__title">Блог о моде</h2>
+            <a href="#" class="fashion-blog__btn">Почитать статьи</a>
+            <div class="fashion-blog__wrapper">
+              <article class="fashion-blog__article article">
+                <div class="article__img">
+                  <img src="./assets/images/blog/new-1.jpg" alt="Тренды на летние сумки 2025">
+                </div>
+                <div class="article__info">
+                  <div class="article__title">Тренды на летние сумки 2025</div>
+                  <div class="article__desription">
+                    <div class="article__description-name">Мода</div>
+                    <div class="article__description-date">Август 24, 2024</div>
+                  </div>
+                  <p class="article__text">Женская сумочка является финальным штрихом каждого модного образа. С ее  помощью можно придать яркость, пикантность и...</p>
+                </div>
+              </article>
+              <article class="fashion-blog__article article">
+                <div class="article__img">
+                  <img src="./assets/images/blog/new-2.jpg" alt="Топ-10 самых популярных кроссовок этого сезона">
+                </div>
+                <div class="article__info">
+                  <div class="article__title">Топ-10 самых популярных кроссовок этого сезона</div>
+                  <div class="article__desription">
+                    <div class="article__description-name">Стиль жизни</div>
+                    <div class="article__description-date">Июль 16, 2024</div>
+                  </div>
+                  <p class="article__text">По мере приближения к концу календарного года разговор всегда заходит о лучших кроссовках, которые мы увидели за этот период...</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+  
+        <section class="partners">
+          <div class="partners__container container">
+            <div class="partners__icons">
+              <img class="partners__icon" src="./assets/images/partners/brand-logo-1.svg" alt="Партнер 1">
+              <img class="partners__icon" src="./assets/images/partners/brand-logo-2.svg" alt="Партнер 2">
+              <img class="partners__icon" src="./assets/images/partners/brand-logo-3.svg" alt="Партнер 3">
+              <img class="partners__icon" src="./assets/images/partners/brand-logo-4.svg" alt="Партнер 4">
+              <img class="partners__icon" src="./assets/images/partners/brand-logo-5.svg" alt="Партнер 5">
+              <img class="partners__icon" src="./assets/images/partners/brand-logo-6.svg" alt="Партнер 6">
+            </div>
+          </div>
+        </section>
+  
+        <section class="news-subscribe">
+          <div class="news-subscribe__container container">
+            <div class="news-subscribe__inner">
+              <h2 class="news-subscribe__title">Подписка на обновления</h2>
+              <p class="news-subscribe__text">Подпишитесь, чтобы получить эксклюзивный доступ 
+                к ранним распродажам и новым поступлениям.</p>
+              <form action="#" class="news-subscribe__form">
+                <label for="news-subscribe" class="news-subscribe__form-label">Email</label>
+                <div class="news-subscribe__form-line">
+                  <input class="news-subscribe__form-input" type="text" id="news-subscribe" placeholder="Введите ваш e-mail"/>
+                  <button class="news-subscribe__form-btn">Подписаться</button>
+                </div>
+                <div class="news-subscribe__form-checkbox checkbox">
+                  <input id="formCheck" type="checkbox" class="checkbox__input">
+                  <label for="formCheck" class="checkbox__label">
+                    Я согласен получать сообщения от Createx.
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="news-subscribe__img">
+              <img src="./assets/images/svg/email-subscr.svg" alt="Подписка на обновления">
+            </div>
+          </div>
+        </section>
+  
+      </main>
+  
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__body footer-body">
+            <div class="footer-body__item help">
+              <div class="help__title">Помощь</div>
+              <a href="#" class="help__link">Доставка & возврат</a>
+              <a href="#" class="help__link">Частые вопросы</a>
+              <a href="#" class="help__link">Трекер доставки</a>
+              <a href="#" class="help__link">Контакты</a>
+              <a href="#" class="help__link">Блог</a>
+            </div>
+            <div class="footer-body__item shop">
+              <div class="shop__title">магазин</div>
+              <a href="#" class="shop__link">Новые поступления</a>
+              <a href="#" class="shop__link">Тренд</a>
+              <a href="#" class="shop__link">Акции</a>
+              <a href="#" class="shop__link">Бренды</a>
+            </div>
+            <div class="footer-body__item contacts">
+              <div class="contacts__title">связаться с нами</div>
+              <div class="contacts__data">
+                <p class="contacts__phone">
+                  <span>Телефон:</span>
+                  <a href="#" class="contacts__phone-link">(812) 555-0128</a>
+                </p>
+                <p class="contacts__email">
+                  <span>Email:</span>
+                  <a href="#" class="contacts__email-link">hello@createx.com</a>
+                </p>
+              </div>
+              <div class="contacts__social social">
+                <a href="#" class="social__icon social__icon--dark">
+                  <span class="_icon-telegram"></span>
+                </a>
+                <a href="#" class="social__icon social__icon--dark">
+                  <span class="_icon-skype"></span>
+                </a>
+                <a href="#" class="social__icon social__icon--dark">
+                  <span class="_icon-vk"></span>
+                </a>
+                <a href="#" class="social__icon social__icon--dark">
+                  <span class="_icon-youtube"></span>
+                </a>
+                <a href="#" class="social__icon social__icon--dark">
+                  <span class="_icon-whatsapp"></span>
+                </a>
+              </div>
+            </div>
+            <div class="footer-body__item app">
+              <div class="app__title">скачать приложение</div>
+              <div class="app__links">
+                <a href="#" class="app__desc-link">
+                  <img src="./assets/images/svg/app-store.svg" alt="Приложение App Store">
+                </a>
+                <a href="#" class="app__desc-link">
+                  <img src="./assets/images/svg/google-play.svg" alt="Приложение Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <div class="copyrighht">© Все права защищены.</div>
+            <div class="made-in">Создано с <span class="_icon-favorite"></span> командой Createx Studio</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup popup-reg">
+      <div class="popup__inner">
+        <div class="popup__body">
+          <h3 class="popup__title">Регистрация</h3>
+          <div class="popup__container">
+            <h4 class="popup__subtitle">Регистрация занимает меньше минуты, но дает вам полный контроль над своими заказами</h4>
+            <div class="popup__form form">
+              <form action="#" class="form__wrapper">
+                <div class="form__item">
+                  <label for="formName" class="form__label">ФИО</label>
+                  <input id="formName" type="text" name="name" class="form__input" placeholder="Введите ФИО">
+                </div>
+                <div class="form__item">
+                  <label for="formMail" class="form__label">E-mail</label>
+                  <input id="formMail" type="text" name="email" class="form__input" placeholder="Введите актуальный e-mail">
+                </div>
+                <div class="form__item">
+                  <label for="formPass1" class="form__label">Пароль</label>
+                  <input id="formPass1" type="password" name="password" class="form__input" placeholder="Введите пароль">
+                  <button class="form__icon-btn _icon-closed-eye"></button>
+                </div>
+                <div class="form__item">
+                  <label for="formPass2" class="form__label">Повторить пароль</label>
+                  <input id="formPass2" type="password" name="password" class="form__input" placeholder="Повторно введите пароль">
+                  <button class="form__icon-btn _icon-closed-eye"></button>
+                </div>
+                <div class="form__action action">
+                  <div class="action__checkbox checkbox">
+                    <input id="c_27" class="checkbox__input" type="checkbox">
+                    <label for="c_27" class="checkbox__label">Запомнить меня</label>
+                  </div>
+                </div>
+                <button type="submit" class="form__btn">Зарегистрироваться</button>
+                <div class="form__info form-info">
+                  <p class="form-info__text">У вас уже есть аккаунт?  
+                    <a href="#" class="form-info__link">Войти</a>
+                  </p>
+                </div>
+              </form>
+              <hr class="popup__line">
+              <div class="popup__socials socials">
+                <p class="socials__text">Или войдите с помощью</p>
+                <div class="socials__body">
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-behance"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-github"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-google"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-pinterest"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-gitlab"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-telegram"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="popup__close close1">&#10006;</button> 
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup-login">
+      <div class="popup__inner">
+        <div class="popup__body">
+          <h3 class="popup__title">Вход</h3>
+          <div class="popup__container">
+            <h4 class="popup__subtitle">Войдите в свою учетную запись, используя адрес электронной почты и пароль, указанные при регистрации</h4>
+            <div class="popup__form form">
+              <form action="#" class="form__wrapper">
+                <div class="form__item">
+                  <label for="formMail" class="form__label">E-mail:</label>
+                  <input id="formMail" type="text" name="email" class="form__input">
+                </div>
+                <div class="form__item">
+                  <label for="formPass" class="form__label">Пароль:</label>
+                  <input id="formPass" type="password" name="password" class="form__input">
+                  <button class="form__icon-btn">
+                    <span class="_icon-closed-eye"></span>
+                  </button>
+                </div>
+                <div class="form__action action">
+                  <div class="action__checkbox checkbox">
+                    <input id="c_28" class="checkbox__input" type="checkbox">
+                    <label for="c_28" class="checkbox__label">Запомнить меня</label>
+                  </div>
+                  <a href="#" class="action__link">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="form__btn">Войти</button>
+                <div class="form__info form-info">
+                  <p class="form-info__text">Нет аккаунта? 
+                    <a href="#" class="form-info__link">Зарегистрируйтесь</a>
+                  </p>
+                </div>
+              </form>
+              <hr class="popup__line">
+              <div class="popup__socials socials">
+                <p class="socials__text">Или войдите с помощью</p>
+                <div class="socials__body">
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-behance"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-github"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-google"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-pinterest"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-gitlab"></span>
+                  </a>
+                  <a href="#" class="social__icon social__icon--light">
+                    <span class="_icon-telegram"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="popup__close close2">&#10006;</button> 
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
