@@ -1,3 +1,0 @@
-проверка установки node.js (node -v)
-создание файла package.json (npm init)
-установка пакетов gulp и sass (npm i gulp gulp-sass sass --save-dev) 
