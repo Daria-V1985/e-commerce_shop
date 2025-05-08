@@ -14,6 +14,7 @@
   </head>
   <body>
     <div class="page">
+      <div class="upward _icon-up"></div>
       <header class="header">
         <div class="header__top header-top">
           <div class="header-top__container container">
@@ -1863,22 +1864,26 @@
             <div class="popup__form form">
               <form action="#" class="form__wrapper">
                 <div class="form__item">
-                  <label for="formName" class="form__label">ФИО</label>
-                  <input id="formName" type="text" name="name" class="form__input" placeholder="Введите ФИО">
+                  <label for="formName" class="form__label">ФИО*</label>
+                  <input id="formName" type="text" name="name" class="form__input req" placeholder="Введите ФИО">
                 </div>
                 <div class="form__item">
-                  <label for="formMail" class="form__label">E-mail</label>
-                  <input id="formMail" type="text" name="email" class="form__input" placeholder="Введите актуальный e-mail">
+                  <label for="formMail" class="form__label">E-mail*</label>
+                  <input id="formMail" type="text" name="email" class="form__input req email" placeholder="Введите актуальный e-mail">
                 </div>
                 <div class="form__item">
-                  <label for="formPass1" class="form__label">Пароль</label>
-                  <input id="formPass1" type="password" name="password" class="form__input" placeholder="Введите пароль">
-                  <button class="form__icon-btn _icon-closed-eye"></button>
+                  <label for="formPass1" class="form__label">Пароль*</label>
+                  <input id="formPass1" type="password" name="password" class="form__input form__input--pass req" placeholder="Введите пароль">
+                  <button class="form__icon-btn ">
+                    <span class="_icon-eye"></span>
+                  </button>
                 </div>
                 <div class="form__item">
-                  <label for="formPass2" class="form__label">Повторить пароль</label>
-                  <input id="formPass2" type="password" name="password" class="form__input" placeholder="Повторно введите пароль">
-                  <button class="form__icon-btn _icon-closed-eye"></button>
+                  <label for="formPass2" class="form__label">Повторить пароль*</label>
+                  <input id="formPass2" type="password" name="password" class="form__input form__input--pass req" placeholder="Повторно введите пароль">
+                  <button class="form__icon-btn">
+                    <span class="_icon-eye"></span>
+                  </button>
                 </div>
                 <div class="form__action action">
                   <div class="action__checkbox checkbox">
@@ -1933,14 +1938,14 @@
             <div class="popup__form form">
               <form action="#" class="form__wrapper">
                 <div class="form__item">
-                  <label for="formMail" class="form__label">E-mail:</label>
-                  <input id="formMail" type="text" name="email" class="form__input">
+                  <label for="formMail" class="form__label">E-mail</label>
+                  <input id="formMail" type="text" name="email" class="form__input req email">
                 </div>
                 <div class="form__item">
-                  <label for="formPass" class="form__label">Пароль:</label>
-                  <input id="formPass" type="password" name="password" class="form__input">
+                  <label for="formPass3" class="form__label">Пароль</label>
+                  <input id="formPass3" type="password" name="password" class="form__input form__input--pass req">
                   <button class="form__icon-btn">
-                    <span class="_icon-closed-eye"></span>
+                    <span class="_icon-eye"></span>
                   </button>
                 </div>
                 <div class="form__action action">

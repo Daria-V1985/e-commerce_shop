@@ -67,6 +67,7 @@ dropdown.forEach(dropDownWrapper => {
   }
 });
 
+
 // Sorting count products on the page
 
 const viewCountInput = document.querySelector('.input-short');
@@ -88,6 +89,7 @@ viewCountArrowUp.addEventListener('click', () => {
       viewCountInput.value = currentValue - 3;
     }
   });
+
 
 // Range slider
 

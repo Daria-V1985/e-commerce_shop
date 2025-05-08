@@ -604,11 +604,16 @@ ul li {
     }
     &:focus {
       border: 1px solid $primary;
+      box-shadow: 2px 2px 4px $primary;
       transition: border 0.15s ease;
       &::placeholder {
         color: transparent;
         transition: border 0.15s ease;
       }
+    }
+    &.error {
+      border: 1px solid $danger;
+      box-shadow: 2px 2px 4px $danger;
     }
   }
   &__icon-btn {
@@ -618,15 +623,21 @@ ul li {
     top: 61%;
     right: 16px;
     cursor: pointer;
-    .view {
-      ._icon-closed-eye {
-        display: none;
-      }
-      ._icon-eye {
-        display: block;
-        content: "\e91e";
-        
-      }
+    span._icon-eye:after {
+      content: '';
+      width: 18px;
+      height: 1px;
+      position: absolute;
+      top: 7px;
+      right: -2px;
+      background-color: $gray900;
+      transform: rotate(45deg);
+      transition: all .5 ease;
+      opacity: 1;
+    }
+    &.active span._icon-eye:after {
+      opacity: 0;
+      transition: all .5 ease;
     }
   }
   &__btn {
@@ -638,6 +649,37 @@ ul li {
   }
   &__info {
     font-weight: $fontWeight400;
+  }
+}
+
+// Scroll up
+
+.upward {
+  background-color: $white;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+  &._icon-up::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $primary;
+    font-size: 24px;
+  }
+  &.up {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
   }
 }
 
